@@ -18,7 +18,7 @@ export const Header = (): JSX.Element => {
                                 <img
                                     className="h-10 w-auto sm:h-14"
                                     src="https://greenera.s3.amazonaws.com/LOGO_ai_rgb.svg"
-                                    alt=""
+                                    alt="logo GreenEra"
                                 />
                             </a>
                         </Link>
@@ -101,9 +101,9 @@ export const Header = (): JSX.Element => {
                                 <div className="flex items-center justify-between">
                                     <div>
                                         <img
-                                            className="h-10 w-auto"
+                                            className="h-12 w-auto"
                                             src="https://greenera.s3.amazonaws.com/LOGO_ai_rgb.svg"
-                                            alt="Workflow"
+                                            alt="logo GreenEra"
                                         />
                                     </div>
                                     <div className="-mr-2">
