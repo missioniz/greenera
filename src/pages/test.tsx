@@ -16,7 +16,6 @@ export const Test = (): JSX.Element => {
             </Head>
             <div className="relative bg-white">
                 <HomeHero />
-                <HomeIntro />
             </div>
         </Layout>
     );
