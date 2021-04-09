@@ -29,37 +29,6 @@ export const HomeHero = (): JSX.Element => {
                                 lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
                                 fugiat aliqua.
                             </p>
-                            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                                <form action="#" className="sm:max-w-xl sm:mx-auto lg:mx-0">
-                                    <div className="sm:flex">
-                                        <div className="min-w-0 flex-1">
-                                            <label htmlFor="email" className="sr-only">
-                                                Email address
-                                            </label>
-                                            <input
-                                                id="email"
-                                                type="email"
-                                                placeholder="Enter your email"
-                                                className="block w-full px-4 py-3 rounded-md border border-primary-300 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-400 focus:ring-offset-primary-900"></input>
-                                        </div>
-                                        <div className="mt-3 sm:mt-0 sm:ml-3">
-                                            <button
-                                                type="submit"
-                                                className="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-primary-500 to-primary-600 text-white font-medium hover:from-primary-600 hover:to-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-400 focus:ring-offset-primary-900">
-                                                free trial
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <p className="mt-3 text-sm text-gray-300 sm:mt-4">
-                                        Start your free 14-day trial, no credit card necessary. By
-                                        providing your email, you agree to our
-                                        <a href="/#" className="font-medium text-white">
-                                            terms or service
-                                        </a>
-                                        .
-                                    </p>
-                                </form>
-                            </div>
                         </div>
                     </main>
                 </div>
