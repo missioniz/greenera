@@ -14,8 +14,10 @@ export const Test = (): JSX.Element => {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <HomeHero />
-            <HomeIntro />
+            <div className="relative bg-white">
+                <HomeHero />
+                <HomeIntro />
+            </div>
         </Layout>
     );
 };
