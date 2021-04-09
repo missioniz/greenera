@@ -136,7 +136,7 @@ export const Contact = (): JSX.Element => {
                                             id="how_can_we_help"
                                             name="how_can_we_help"
                                             aria-describedby="how_can_we_help_description"
-                                            rows="4"
+                                            rows={4}
                                             className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"></textarea>
                                     </div>
                                 </div>
