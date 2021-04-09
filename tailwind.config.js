@@ -1,3 +1,7 @@
+// tailwind.config.js
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const colors = require('tailwindcss/colors');
+
 module.exports = {
     darkMode: 'media', // 'media' or 'class'
     future: {
@@ -11,6 +15,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                primary: colors.emerald,
+                warmGray: colors.warmGray,
                 'accent-1': '#333'
             }
         }
