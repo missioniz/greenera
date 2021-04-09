@@ -54,7 +54,7 @@ export const Header = (): JSX.Element => {
                             Загальна інформація
                         </a>
                         <a
-                            href="/#"
+                            href="/green-building"
                             className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Зелене будівництво
                         </a>
@@ -139,7 +139,7 @@ export const Header = (): JSX.Element => {
                                         Загальна інформація
                                     </a>
                                     <a
-                                        href="/#"
+                                        href="/green-building"
                                         className="text-base font-medium text-gray-900 hover:text-gray-700">
                                         Зелене будівництво
                                     </a>
@@ -148,18 +148,16 @@ export const Header = (): JSX.Element => {
                                         className="text-base font-medium text-gray-900 hover:text-gray-700">
                                         Нормативи
                                     </a>
-
                                     <a
                                         href="/#"
                                         className="text-base font-medium text-gray-900 hover:text-gray-700">
                                         Інновації
                                     </a>
-
-                                    <a
-                                        href="/#"
-                                        className="text-base font-medium text-gray-900 hover:text-gray-700">
-                                        Контакти
-                                    </a>
+                                    <Link href={'/contact'}>
+                                        <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                                            Контакти
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
