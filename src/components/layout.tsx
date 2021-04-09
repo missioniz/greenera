@@ -14,7 +14,7 @@ export const Layout = ({
     contact?: boolean;
 }): JSX.Element => {
     return (
-        <div className="bg-white">
+        <div className="relative bg-white">
             <HeadComponent />
             <Header />
             {!contact && <Banner />}

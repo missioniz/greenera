@@ -14,7 +14,7 @@ export const Footer = (): JSX.Element => {
                     </div>
 
                     <div className="px-5 py-2">
-                        <a href="/#" className="text-base text-gray-500 hover:text-gray-900">
+                        <a href="/green-building" className="text-base text-gray-500 hover:text-gray-900">
                             Зелене будівництво
                         </a>
                     </div>
