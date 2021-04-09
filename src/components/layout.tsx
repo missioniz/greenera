@@ -6,15 +6,13 @@ export const siteTitle = 'GreenEra';
 
 export const Layout = ({
     children,
-    home,
     contact
 }: {
     children: React.ReactNode;
-    home?: boolean;
     contact?: boolean;
 }): JSX.Element => {
     return (
-        <div className="bg-white">
+        <>
             <HeadComponent />
             <Header />
             {!contact && <Banner />}
@@ -22,7 +20,7 @@ export const Layout = ({
                 {children}
                 <Footer />
             </main>
-        </div>
+        </>
     );
 };
 

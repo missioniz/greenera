@@ -2,9 +2,9 @@ import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
 
 import Layout from '../components/layout';
-export const siteTitle = 'GreenEra';
+export const siteTitle = 'GreenEra | Test';
 
-export const Home = (): JSX.Element => {
+export const Test = (): JSX.Element => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { t } = useTranslation();
     return (
@@ -12,7 +12,7 @@ export const Home = (): JSX.Element => {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <>
+            <div className="bg-white">
                 <div className="relative bg-white overflow-hidden">
                     <div className="max-w-7xl mx-auto">
                         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -191,9 +191,9 @@ export const Home = (): JSX.Element => {
                         </div>
                     </div>
                 </div>
-            </>
+            </div>
         </Layout>
     );
 };
 
-export default Home;
+export default Test;
