@@ -21,12 +21,12 @@ export const Banner = (): JSX.Element => {
                 <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
                     <div className="pr-16 sm:text-center sm:px-16">
                         <p className="font-medium text-white">
-                            <span className="md:hidden">We announced a new product!</span>
+                            <span className="md:hidden">Портал працює в тестовому режимі.</span>
                             <span className="hidden md:inline">
                                 Портал працює в тестовому режимі. Якщо ви маєте зауваження або
                                 пропозиції, будь ласка,
                             </span>
-                            <span className="block sm:ml-2 sm:inline-block">
+                            <span className="hidden block sm:ml-2 sm:inline-block">
                                 <a href="/contact" className="text-white font-bold underline">
                                     {' '}
                                     напишіть нам <span aria-hidden="true">&rarr;</span>

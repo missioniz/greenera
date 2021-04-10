@@ -2,7 +2,6 @@ import Banner from './banner';
 import Footer from './footer';
 import HeadComponent from './head';
 import Header from './header';
-export const siteTitle = 'GreenEra';
 
 export const Layout = ({
     children,

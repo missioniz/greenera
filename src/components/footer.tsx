@@ -8,7 +8,7 @@ export const Footer = (): JSX.Element => {
             <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
                 <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
                     <div className="px-5 py-2">
-                        <a href="/#" className="text-base text-gray-500 hover:text-gray-900">
+                        <a href="/about" className="text-base text-gray-500 hover:text-gray-900">
                             Загальна інформація
                         </a>
                     </div>
@@ -32,8 +32,18 @@ export const Footer = (): JSX.Element => {
                     </div>
 
                     <div className="px-5 py-2">
+                        <Link href={'/blog'}>
+                            <a className="text-base text-gray-500 hover:text-gray-900">
+                                Блог
+                            </a>
+                        </Link>
+                    </div>
+
+                    <div className="px-5 py-2">
                         <Link href={'/contact'}>
-                            <a className="text-base text-gray-500 hover:text-gray-900">Контакти</a>
+                            <a className="text-base text-gray-500 hover:text-gray-900">
+                                Контакти
+                            </a>
                         </Link>
                     </div>
 
