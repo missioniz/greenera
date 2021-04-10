@@ -69,7 +69,7 @@ export const Contact = (): JSX.Element => {
                                     <label
                                         form="email"
                                         className="block text-sm font-medium text-gray-700">
-                                        Email
+                                        Електронна адреса
                                     </label>
                                     <div className="mt-1">
                                         <input
