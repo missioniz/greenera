@@ -49,7 +49,7 @@ export const Header = (): JSX.Element => {
                     </div>
                     <nav className="hidden md:flex space-x-10">
                         <a
-                            href="/#"
+                            href="/about"
                             className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Загальна інформація
                         </a>
@@ -68,6 +68,11 @@ export const Header = (): JSX.Element => {
                             className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Інновації
                         </a>
+                        <Link href={'/blog'}>
+                            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                                Блог
+                            </a>
+                        </Link>
                         <Link href={'/contact'}>
                             <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                                 Контакти
@@ -134,7 +139,7 @@ export const Header = (): JSX.Element => {
                             <div className="py-6 px-5">
                                 <div className="grid grid-cols-2 gap-4">
                                     <a
-                                        href="/#"
+                                        href="/about"
                                         className="text-base font-medium text-gray-900 hover:text-gray-700">
                                         Загальна інформація
                                     </a>
@@ -153,6 +158,11 @@ export const Header = (): JSX.Element => {
                                         className="text-base font-medium text-gray-900 hover:text-gray-700">
                                         Інновації
                                     </a>
+                                    <Link href={'/blog'}>
+                                        <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                                            Блог
+                                        </a>
+                                    </Link>
                                     <Link href={'/contact'}>
                                         <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                                             Контакти
