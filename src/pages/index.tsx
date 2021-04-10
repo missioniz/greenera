@@ -277,11 +277,10 @@ export const Home = (): JSX.Element => {
                 <div className="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:py-20 lg:px-8 lg:flex lg:items-center">
                     <div className="lg:w-0 lg:flex-1">
                         <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                            Sign up for our newsletter
+                            Підпишіться на нашу розсилку новин
                         </h2>
                         <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem
-                            cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.
+                            Будьте у курсі останніх новин GreenEra. Дізнавайтеся про наші найближчі події, новини та інші цікавинки.
                         </p>
                     </div>
                     <div className="mt-8 lg:mt-0 lg:ml-8">
@@ -296,18 +295,18 @@ export const Home = (): JSX.Element => {
                                 autoComplete="email"
                                 required
                                 className="w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-primary-500 focus:border-primary-500 sm:max-w-xs rounded-md"
-                                placeholder="Enter your email"></input>
+                                placeholder="Електронна адреса"></input>
                             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                                 <button
                                     type="submit"
                                     className="w-full flex items-center justify-center py-3 px-5 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
-                                    Notify me
+                                    Надіслати
                                 </button>
                             </div>
                         </form>
                         <p className="mt-3 text-sm text-gray-500">
-                            We care about the protection of your data. Read our <a href="/#" className="text-sm text-gray-500 hover:text-gray-900 underline">
-                                Privacy Policy.
+                            Ми дбаємо про захист ваших даних. Прочитайте нашу <a href="/privacy" className="text-sm text-gray-500 hover:text-gray-900 underline">
+                                Політику конфіденційності.
                             </a>
                         </p>
                     </div>
