@@ -17,7 +17,7 @@ export const Header = (): JSX.Element => {
                                 <span className="sr-only">Workflow</span>
                                 <img
                                     className="h-12 w-auto sm:h-16"
-                                    src="https://greenera.s3.amazonaws.com/LOGO_ai_rgb.svg"
+                                    src="https://greenera.s3.amazonaws.com/LOGO_ai_rgb.png"
                                     alt="logo GreenEra"
                                 />
                             </a>
@@ -102,7 +102,7 @@ export const Header = (): JSX.Element => {
                                     <div>
                                         <img
                                             className="h-12 w-auto"
-                                            src="https://greenera.s3.amazonaws.com/LOGO_ai_rgb.svg"
+                                            src="https://greenera.s3.amazonaws.com/LOGO_ai_rgb.png"
                                             alt="logo GreenEra"
                                         />
                                     </div>

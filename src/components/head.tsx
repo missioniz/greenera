@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { siteTitle } from './layout';
+export const siteTitle = 'GreenEra';
 
 export const HeadComponent = (): JSX.Element => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -14,14 +14,30 @@ export const HeadComponent = (): JSX.Element => {
                 name="description"
                 content="Learn how to build a personal website using Next.js"
             />
-            <meta
-                property="og:image"
-                content={`https://og-image.now.sh/${encodeURI(
-                    siteTitle
-                )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-            />
             <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
+            {/*favocin*/}
+            <link
+                rel="apple-touch-icon"
+                sizes="180x180"
+                href="/static/favicon/apple-touch-icon.png"></link>
+            <link
+                rel="icon"
+                type="image/png"
+                sizes="32x32"
+                href="/static/favicon/favicon-32x32.png"></link>
+            <link
+                rel="icon"
+                type="image/png"
+                sizes="16x16"
+                href="/static/favicon/favicon-16x16.png"></link>
+            <link rel="manifest" href="/static/favicon/site.webmanifest"></link>
+            <link
+                rel="mask-icon"
+                href="/static/favicon/safari-pinned-tab.svg"
+                color="#5bbad5"></link>
+            <meta name="msapplication-TileColor" content="#da532c"></meta>
+            <meta name="theme-color" content="#ffffff"></meta>
         </Head>
     );
 };
