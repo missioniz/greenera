@@ -22,6 +22,7 @@ export const Layout = ({
                 <Footer />
             </main>
             <CookieConsent
+                debug={true}
                 onAccept={() => {
                     alert('Дякую за розуміння!');
                 }}
