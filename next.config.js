@@ -11,5 +11,5 @@ module.exports = {
     sassOptions: {
         includePaths: [path.join(__dirname, './src/styles')]
     },
-    targets: 'serverless'
+    target: 'serverless'
 };
