@@ -5,10 +5,11 @@ const nextTranslate = require('next-translate');
 
 module.exports = {
     future: {
-        webpack5: true,
+        webpack5: true
     },
     ...nextTranslate(),
     sassOptions: {
         includePaths: [path.join(__dirname, './src/styles')]
-    }
+    },
+    targets: 'serverless'
 };
