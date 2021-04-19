@@ -35,7 +35,7 @@ export const HeadComponent = (): JSX.Element => {
             <link
                 rel="mask-icon"
                 href="/static/favicon/safari-pinned-tab.svg"
-                color="#5bbad5"></link>
+                color="#064E3B"></link>
             <meta name="msapplication-TileColor" content="#da532c"></meta>
             <meta name="theme-color" content="#ffffff"></meta>
         </Head>

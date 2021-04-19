@@ -224,9 +224,7 @@ export const Privacy = (): JSX.Element => {
                             If you have questions or comments about this Privacy Statement, please
                             use the{' '}
                             <Link href="/contact">
-                                <a className="hover:text-gray-900">
-                                    Contact Form
-                                </a>
+                                <a className="hover:text-gray-900">Contact Form</a>
                             </Link>{' '}
                             on this website.
                         </p>

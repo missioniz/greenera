@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
+import { useRef, useState } from 'react';
 
 import Layout from '../components/layout';
 
@@ -8,6 +9,40 @@ export const siteTitle = 'GreenEra';
 export const Home = (): JSX.Element => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { t } = useTranslation();
+
+    // 1. Create a reference to the input so we can fetch/clear it's value.
+    const inputEl = useRef(null);
+    // 2. Hold a message in state to handle the response from our API.
+    const [message, setMessage] = useState('');
+
+    const subscribe = async (e) => {
+        e.preventDefault();
+
+        // 3. Send a request to our API with the user's email address.
+        const res = await fetch('/api/subscribe', {
+            body: JSON.stringify({
+                email: inputEl.current.value
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            method: 'POST'
+        });
+
+        const { error } = await res.json();
+
+        if (error) {
+            // 4. If there was an error, update the message in state.
+            setMessage('Ви вже підписані на нашу розсилку!');
+
+            return;
+        }
+
+        // 5. Clear the input value and show a success message.
+        inputEl.current.value = '';
+        setMessage('Успішно! 🎉 Тепер ви підписалися на розсилку новин.');
+    };
+
     return (
         <Layout>
             <Head>
@@ -27,12 +62,17 @@ export const Home = (): JSX.Element => {
                         <div className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                             <div className="sm:text-center lg:text-left">
                                 <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                                    <span className="block xl:inline">Освітньо-інформаційна платформа</span>
-                                    <span className="block text-primary-600 xl:inline"> GreenEra
+                                    <span className="block xl:inline">
+                                        Освітньо-інформаційна платформа
+                                    </span>
+                                    <span className="block text-primary-600 xl:inline">
+                                        {' '}
+                                        GreenEra
                                     </span>
                                 </h1>
                                 <p className="mt-3 text-lg text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                                    просуває інноваційні політичні рішення, які спрямовують нас на більш чистий, безпечний та стійкий енергетичний шлях.
+                                    просуває інноваційні політичні рішення, які спрямовують нас на
+                                    більш чистий, безпечний та стійкий енергетичний шлях.
                                 </p>
                             </div>
                         </div>
@@ -170,7 +210,7 @@ export const Home = (): JSX.Element => {
                                         <p>
                                             Erat pellentesque dictumst ligula porttitor risus eget
                                             et eget. Ultricies tellus felis id dignissim eget. Est
-                                            augue <a href="#">maecenas</a> risus nulla ultrices
+                                            augue <a href="/#">maecenas</a> risus nulla ultrices
                                             congue nunc tortor. Eu leo risus porta integer
                                             suspendisse sed sit ligula elit.
                                         </p>
@@ -277,32 +317,42 @@ export const Home = (): JSX.Element => {
                             Підпишіться на нашу розсилку новин
                         </h2>
                         <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                            Будьте у курсі останніх новин GreenEra. Дізнавайтеся про наші найближчі події, новини та інші цікавинки.
+                            Будьте у курсі останніх новин GreenEra. Дізнавайтеся про наші найближчі
+                            події, новини та інші цікавинки.
                         </p>
                     </div>
                     <div className="mt-8 lg:mt-0 lg:ml-8">
-                        <form className="sm:flex">
-                            <label htmlFor="emailAddress" className="sr-only">
-                                Email address
+                        <form onSubmit={subscribe} className="sm:flex">
+                            <label htmlFor="email-input" className="sr-only">
+                                {'Email Address'}
                             </label>
                             <input
-                                id="emailAddress"
-                                name="emailAddress"
+                                id="email-input"
+                                name="email"
                                 type="email"
                                 autoComplete="email"
                                 required
+                                ref={inputEl}
                                 className="w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-primary-500 focus:border-primary-500 sm:max-w-xs rounded-md"
                                 placeholder="Електронна адреса"></input>
                             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                                 <button
                                     type="submit"
                                     className="w-full flex items-center justify-center py-3 px-5 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
-                                    Надіслати
+                                    {message ? 'Відправлено' : 'Надіслати'}
                                 </button>
                             </div>
                         </form>
                         <p className="mt-3 text-sm text-gray-500">
-                            Ми дбаємо про захист ваших даних. Прочитайте нашу <a href="/privacy" className="text-sm text-gray-500 hover:text-gray-900 underline">
+                            {message
+                                ? message
+                                : `Ми надсилатимемо електронні листи лише тоді, коли буде опубліковано новий вміст.`}
+                        </p>
+                        <p className="mt-3 text-sm text-gray-500">
+                            Ми дбаємо про захист ваших даних. Прочитайте нашу{' '}
+                            <a
+                                href="/privacy"
+                                className="text-sm text-gray-500 hover:text-gray-900 underline">
                                 Політику конфіденційності.
                             </a>
                         </p>

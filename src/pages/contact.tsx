@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
+import React, { useState } from 'react';
 
 import Layout from '../components/layout';
 export const siteTitle = 'GreenEra | Контакти';
@@ -7,6 +8,73 @@ export const siteTitle = 'GreenEra | Контакти';
 export const Contact = (): JSX.Element => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { t } = useTranslation();
+
+    const [status, setStatus] = useState({
+        submitted: false,
+        submitting: false,
+        info: { error: false, msg: null }
+    });
+
+    const [inputs, setInputs] = useState({
+        email: '',
+        message: '',
+        firstName: '',
+        lastName: '',
+        companyName: '',
+        phone: ''
+    });
+
+    const handleResponse = (status, msg) => {
+        if (status === 200) {
+            setStatus({
+                submitted: true,
+                submitting: false,
+                info: { error: false, msg: msg }
+            });
+            setInputs({
+                email: '',
+                message: '',
+                firstName: '',
+                lastName: '',
+                companyName: '',
+                phone: ''
+            });
+        } else {
+            setStatus({
+                submitted: false,
+                submitting: false,
+                info: { error: true, msg: msg }
+            });
+        }
+    };
+
+    const handleOnChange = (e) => {
+        e.persist();
+        setInputs((prev) => ({
+            ...prev,
+            [e.target.id]: e.target.value
+        }));
+        setStatus({
+            submitted: false,
+            submitting: false,
+            info: { error: false, msg: null }
+        });
+    };
+
+    const handleOnSubmit = async (e) => {
+        e.preventDefault();
+        setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
+        const res = await fetch('/api/sendgrid', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(inputs)
+        });
+        const text = await res.text();
+        handleResponse(res.status, text);
+    };
+
     return (
         <Layout contact>
             <Head>
@@ -28,51 +96,60 @@ export const Contact = (): JSX.Element => {
                                 Зворотній зв&#39;язок
                             </h2>
                             <p className="mt-4 text-lg text-gray-500 sm:mt-3">
-                                Ви можете запитати консультації, домовитися про зустріч з нами або задати нам будь-яке Ваше запитання.
-                                Ми будемо раді відповісти найближчим часом.
+                                Ви можете запитати консультації, домовитися про зустріч з нами або
+                                задати нам будь-яке Ваше запитання. Ми будемо раді відповісти
+                                найближчим часом.
                             </p>
                             <form
-                                action="#"
-                                method="POST"
+                                onSubmit={handleOnSubmit}
                                 className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                                 <div>
                                     <label
-                                        form="first_name"
+                                        htmlFor="firstName"
                                         className="block text-sm font-medium text-gray-700">
-                                        Им'я
+                                        Им&#39;я
                                     </label>
                                     <div className="mt-1">
                                         <input
+                                            onChange={handleOnChange}
+                                            value={inputs.firstName}
+                                            required
                                             type="text"
-                                            name="first_name"
-                                            id="first_name"
+                                            name="firstName"
+                                            id="firstName"
                                             autoComplete="given-name"
                                             className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"></input>
                                     </div>
                                 </div>
                                 <div>
                                     <label
-                                        form="last_name"
+                                        htmlFor="lastName"
                                         className="block text-sm font-medium text-gray-700">
                                         Прізвище
                                     </label>
                                     <div className="mt-1">
                                         <input
+                                            onChange={handleOnChange}
+                                            value={inputs.lastName}
+                                            required
                                             type="text"
-                                            name="last_name"
-                                            id="last_name"
+                                            name="lastName"
+                                            id="lastName"
                                             autoComplete="family-name"
                                             className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"></input>
                                     </div>
                                 </div>
                                 <div className="sm:col-span-2">
                                     <label
-                                        form="email"
+                                        htmlFor="email"
                                         className="block text-sm font-medium text-gray-700">
                                         Електронна адреса
                                     </label>
                                     <div className="mt-1">
                                         <input
+                                            onChange={handleOnChange}
+                                            value={inputs.email}
+                                            required
                                             id="email"
                                             name="email"
                                             type="email"
@@ -81,16 +158,25 @@ export const Contact = (): JSX.Element => {
                                     </div>
                                 </div>
                                 <div className="sm:col-span-2">
-                                    <label
-                                        form="company"
-                                        className="block text-sm font-medium text-gray-700">
-                                        Назва компанії
-                                    </label>
+                                    <div className="flex justify-between">
+                                        <label
+                                            htmlFor="companyName"
+                                            className="block text-sm font-medium text-gray-700">
+                                            Назва компанії
+                                        </label>
+                                        <span
+                                            id="companyName_description"
+                                            className="text-sm text-gray-500">
+                                            Необов&#39;язково
+                                        </span>
+                                    </div>
                                     <div className="mt-1">
                                         <input
+                                            onChange={handleOnChange}
+                                            value={inputs.companyName}
                                             type="text"
-                                            name="company"
-                                            id="company"
+                                            name="companyName"
+                                            id="companyName"
                                             autoComplete="organization"
                                             className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"></input>
                                     </div>
@@ -98,18 +184,20 @@ export const Contact = (): JSX.Element => {
                                 <div className="sm:col-span-2">
                                     <div className="flex justify-between">
                                         <label
-                                            form="phone"
+                                            htmlFor="phone"
                                             className="block text-sm font-medium text-gray-700">
                                             Телефон
                                         </label>
                                         <span
                                             id="phone_description"
                                             className="text-sm text-gray-500">
-                                            Optional
+                                            Необов&#39;язково
                                         </span>
                                     </div>
                                     <div className="mt-1">
                                         <input
+                                            onChange={handleOnChange}
+                                            value={inputs.phone}
                                             type="text"
                                             name="phone"
                                             id="phone"
@@ -121,20 +209,23 @@ export const Contact = (): JSX.Element => {
                                 <div className="sm:col-span-2">
                                     <div className="flex justify-between">
                                         <label
-                                            form="how_can_we_help"
+                                            htmlFor="message"
                                             className="block text-sm font-medium text-gray-700">
                                             Текст повідомлення
                                         </label>
                                         <span
                                             id="how_can_we_help_description"
                                             className="text-sm text-gray-500">
-                                            Max. 500 characters
+                                            Максимум 500 символів
                                         </span>
                                     </div>
                                     <div className="mt-1">
                                         <textarea
-                                            id="how_can_we_help"
-                                            name="how_can_we_help"
+                                            onChange={handleOnChange}
+                                            required
+                                            value={inputs.message}
+                                            id="message"
+                                            name="message"
                                             aria-describedby="how_can_we_help_description"
                                             rows={4}
                                             className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"></textarea>
@@ -143,11 +234,26 @@ export const Contact = (): JSX.Element => {
                                 <div className="text-right sm:col-span-2">
                                     <button
                                         type="submit"
+                                        disabled={status.submitting}
                                         className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600">
-                                        Надіслати
+                                        {!status.submitting
+                                            ? !status.submitted
+                                                ? 'Надіслати'
+                                                : 'Відправлено'
+                                            : 'Submitting...'}
                                     </button>
                                 </div>
                             </form>
+                            <span className="text-red-800 text-base">
+                                {status.info.error && (
+                                    <div className="error">Error: {status.info.msg}</div>
+                                )}
+                            </span>
+                            <span className="text-green-800 text-base">
+                                {!status.info.error && status.info.msg && (
+                                    <div className="success">{status.info.msg}</div>
+                                )}
+                            </span>
                         </div>
                     </div>
                 </div>
