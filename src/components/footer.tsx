@@ -25,7 +25,7 @@ export const Footer = (): JSX.Element => {
 
                     <div className="px-5 py-2">
                         <a
-                            href="/green-building"
+                            href="/greenbuilding"
                             className="text-base text-gray-500 hover:text-gray-900">
                             Зелене будівництво
                         </a>

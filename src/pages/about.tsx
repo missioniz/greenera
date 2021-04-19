@@ -74,7 +74,9 @@ export const About = (): JSX.Element => {
                                 Якщо ви бажаєте взяти участь в цьому проекті -{' '}
                                 <Link href="/contact">
                                     <a>
-                                        <span className="text-primary-600 hover:text-gray-900 hover:no-underline">долучайтеся</span>
+                                        <span className="text-primary-600 hover:text-gray-900 hover:no-underline">
+                                            долучайтеся
+                                        </span>
                                     </a>
                                 </Link>{' '}
                                 до професійної екологічної спільноти!
