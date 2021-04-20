@@ -1,6 +1,6 @@
 import useTranslation from 'next-translate/useTranslation';
 
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import Faq from '../components/tailwindui/faq';
 import ModalSmall from '../components/tailwindui/smallModal';
 
