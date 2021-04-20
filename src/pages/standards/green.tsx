@@ -95,7 +95,7 @@ export const GreenStandards = (): JSX.Element => {
                                         y="0"
                                         width="4"
                                         height="4"
-                                        className="text-gray-200"
+                                        className="text-primary-200"
                                         fill="currentColor"
                                     />
                                 </pattern>
