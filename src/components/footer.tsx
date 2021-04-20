@@ -46,7 +46,7 @@ export const Footer = (): JSX.Element => {
                     </div>
 
                     <div className="px-5 py-2">
-                        <Link href={'/blog'}>
+                        <Link href={'/sources'}>
                             <a className="text-base text-gray-500 hover:text-gray-900">Джерела</a>
                         </Link>
                     </div>

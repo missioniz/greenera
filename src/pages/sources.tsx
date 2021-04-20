@@ -29,7 +29,7 @@ const posts = [
     {
         title:
             'Ways to improve the environmental safety of the urbanized environment in connection with the COVID-19.',
-        author: '3.	Kryvomaz, Т.I. and Varavin, D.V.',
+        author: 'Kryvomaz, Т.I. and Varavin, D.V.',
         date: '2020'
     }
 ];
