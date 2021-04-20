@@ -1,9 +1,9 @@
 import CookieConsent from 'react-cookie-consent';
 
-import Banner from './banner';
-import Footer from './footer';
-import HeadComponent from './head';
-import Header from './header';
+import Banner from './Banner';
+import Footer from './Footer';
+import HeadComponent from './Head';
+import Header from './Header';
 
 export const Layout = ({
     children,
@@ -17,7 +17,7 @@ export const Layout = ({
             <HeadComponent />
             <Header />
             {!contact && <Banner />}
-            <main>
+            <main className="bg-white">
                 {children}
                 <Footer />
             </main>

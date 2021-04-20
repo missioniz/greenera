@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 export const siteTitle = 'GreenEra | Політика конфіденційності';
 
@@ -36,7 +36,7 @@ export const Privacy = (): JSX.Element => {
                                         y="0"
                                         width="4"
                                         height="4"
-                                        className="text-gray-200"
+                                        className="text-primary-200"
                                         fill="currentColor"
                                     />
                                 </pattern>
@@ -66,7 +66,7 @@ export const Privacy = (): JSX.Element => {
                                         y="0"
                                         width="4"
                                         height="4"
-                                        className="text-gray-200"
+                                        className="text-primary-200"
                                         fill="currentColor"
                                     />
                                 </pattern>
@@ -96,7 +96,7 @@ export const Privacy = (): JSX.Element => {
                                         y="0"
                                         width="4"
                                         height="4"
-                                        className="text-gray-200"
+                                        className="text-primary-200"
                                         fill="currentColor"
                                     />
                                 </pattern>
@@ -116,117 +116,119 @@ export const Privacy = (): JSX.Element => {
                                 Політика конфіденційності
                             </span>
                         </h1>
-                        <p className="mt-8 text-xl text-gray-500 leading-8">
-                            GreenEra is an Open Access Project (GreenEra).
-                        </p>
-                        <p className="mt-8 text-xl text-gray-500 leading-8">
-                            Website operator: This website is operated by missionIZ.
-                        </p>
                     </div>
                     <div className="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
+                        <p>GreenEra - це проект з відкритим доступом.</p>
                         <p>
-                            GreenEra is committed to protecting confidential information&#39;s
-                            privacy and accuracy to the and accuracy to the extent possible, subject
-                            to to state and federal law provisions. Other than as required by laws
-                            that guarantee public access to certain types of information or in
-                            response response to subpoenas or other other legal instruments that
-                            authorize personal information is not actively shared. In particular, we
-                            do not re-distribute or sell personal information collected on our web
-                            servers.
+                            GreenEra прагне захищати конфіденційність інформації, її
+                            конфіденційність, точність і точність, наскільки це можливо, відповідно
+                            до положень законодавства штату та федерального законодавства. За
+                            винятком випадків, передбачених законами, які гарантують доступ
+                            громадськості до певних типів інформації або у відповідь на повістки до
+                            суду чи інші юридичні документи, що дозволяють особисту інформацію,
+                            активно не ділиться. Зокрема, ми не розповсюджуємо та не продаємо
+                            особисту інформацію, зібрану на наших веб-серверах.
                         </p>
                         <p>
-                            Although many applications and websites collect information and other
-                            statistics about their statistics about their users, we DO NOT collect
-                            any personal information about you when visiting this website.
+                            Хоча багато програм та веб-сайти збирають інформацію та інші статистичні
+                            дані про своїх користувачів, ми НЕ збираємо жодної особистої інформації
+                            про вас під час відвідування цього веб-сайту.
                         </p>
-                        <h3>Information collected</h3>
-                        <p>GreenEra servers collect the following analytics:</p>
-                        <ul>
-                            <li>Internet Protocol (IP) address of computer being used</li>
-                            <li>web pages requested</li>
-                            <li>referring web page</li>
-                            <li>browser used</li>
-                            <li>date and time</li>
-                        </ul>
-                        <p>
-                            GreenEra does not associate this data with individual user identities.
-                        </p>
-                        <h3>Cookies</h3>
-                        <p>
-                            GreenEra may use &#34;cookies&#34; to deliver web content specific to
-                            individual users&#39; interests or keep track of online purchasing
-                            transactions. Sensitive personal information is not stored within
-                            cookies.
-                        </p>
-                        <h3>Webforms</h3>
-                        <p>
-                            GreenEra use webforms forms on this website. These forms require users
-                            to give contact information (name, email address, phone number). Contact
-                            information from the registration form is used only to send material
-                            relating to the purpose for which it was collected and will not be sold
-                            to another party.
-                        </p>
-                        <h3>Use of collected information:</h3>
-                        <p>GreenEra servers uses the collected data for the following purposes:</p>
+                        <h4>Сайт збирає наступну інформацію</h4>
+                        <p>Сервер GreenEra збирають таку аналітику:</p>
                         <ul>
                             <li>
-                                GreenEra will only use personal information collected from this site
-                                site to communicate back to individuals who contact us via the site.
+                                адреса інтернет-протоколу (IP) комп&#39;ютера, що використовується;
                             </li>
-                            <li>
-                                GreenEra uses browser-IP-address information and anonymous-browser
-                                history to report information about site accesses and for profiling
-                                purposes. This information is used to improve Web presentation and
-                                utilization. IP address information may also be used for
-                                troubleshooting purposes.
-                            </li>
+                            <li>запитуються веб-сторінки;</li>
+                            <li>посилання на веб-сторінку;</li>
+                            <li>браузер, що використовується;</li>
+                            <li>дата і час</li>
                         </ul>
-                        <h3>Distribution of collected information</h3>
                         <p>
-                            GreenEra servers distribute the collected data for the following terms:
+                            GreenEra не пов&#39;язує ці дані з індивідуальними ідентифікаторами
+                            користувачів.
                         </p>
+                        <h4>Cookies</h4>
+                        <p>
+                            GreenEra може використовувати &quot;файли cookie&quot; для доставки
+                            веб-вмісту, що відповідає інтересам окремих користувачів, або для
+                            відстеження транзакцій купівлі через Інтернет. Конфіденційна особиста
+                            інформація не зберігається в файлах cookie.
+                        </p>
+                        <h4>Веб-форми</h4>
+                        <p>
+                            GreenEra використовує веб-форми на цьому веб-сайті. Ці форми вимагають
+                            від користувачів надати контактну інформацію (ім&#39;я, електронну
+                            адресу, номер телефону). Контактна інформація з реєстраційної форми
+                            використовується лише для надсилання матеріалів, що стосуються мети, з
+                            якою вона була зібрана, і не буде продана іншій стороні.
+                        </p>
+                        <h4>Використання зібраної інформації</h4>
+                        <p>Сервери GreenEra використовують зібрані дані для таких цілей:</p>
                         <ul>
                             <li>
-                                GreenEra will not disclose, without your consent, personal
-                                information collected about you, except for certain explicit
-                                circumstances in which disclosure is required by law.
+                                GreenEra використовуватиме лише особисту інформацію, зібрану на
+                                цьому веб-сайті, для зворотного зв&#39;язку з особами, які
+                                зв&#39;язуються з нами через веб-сайт.
                             </li>
                             <li>
-                                GreenEra will not distribute or sell personal information to
-                                third-party organizations.
+                                GreenEra використовує інформацію про IP-адресу браузера та історію
+                                анонімного браузера для повідомлення інформації про доступ до сайту
+                                та для цілей профілювання. Ця інформація використовується для
+                                покращення веб-презентації та використання. Інформація про IP-адресу
+                                також може використовуватися для усунення несправностей.
                             </li>
                         </ul>
-                        <h3>Privacy Statement Revisions</h3>
+                        <h4>Поширення зібраної інформації</h4>
+                        <p>Сервери GreenEra поширюють зібрані дані на такі терміни:</p>
+                        <ul>
+                            <li>
+                                GreenEra не буде розголошувати без вашої згоди особисту інформацію,
+                                зібрану про вас, за винятком певних явних обставин, за яких
+                                розголошення вимагається законодавством.
+                            </li>
+                            <li>
+                                GreenEra не буде поширювати або продавати особисту інформацію
+                                стороннім організаціям.
+                            </li>
+                        </ul>
+                        <h4>Положення про конфіденційність</h4>
                         <p>
-                            This Privacy Statement was last revised on 04/02/2021. We may change
-                            this Privacy Statement at any time and for any reason. We encourage you
-                            to review this Privacy Statement each time you visit the website
-                            www.greenera.info. If we make a significant change to our Privacy
-                            Statement, we will post a notice on our website&#39;s homepage for some
-                            after the change is made.
-                        </p>
-                        <h3>Responsibility for External Sites</h3>
-                        <p>
-                            This website www.greenera.info, may contain links to other websites.
-                            Some of those websites may be operated by third parties. We provide the
-                            links for your convenience, but we do not review, control, or monitor
-                            the privacy practices of websites operated by others.
-                        </p>
-                        <p>
-                            We are not responsible for the performance of websites operated by third
-                            parties or for your business dealings with them. Therefore, whenever you
-                            leave this website, we recommend that you review each website&#39;s
-                            privacy practices and make your conclusions regarding these
-                            practices&#39; adequacy.
-                        </p>
-                        <h3>How to contact us</h3>
-                        <p>
-                            If you have questions or comments about this Privacy Statement, please
-                            use the{' '}
-                            <Link href="/contact">
-                                <a className="hover:text-gray-900">Contact Form</a>
+                            Ця заява про конфіденційність востаннє переглядалася 02.04.2021. Ми
+                            можемо змінити цю Заяву про конфіденційність у будь-який час і з
+                            будь-якої причини. Ми рекомендуємо вам переглянути цю Заяву про
+                            конфіденційність кожного разу, коли ви відвідуєте веб-сайт{' '}
+                            <Link href="/">
+                                <a>www.greenera.info.</a>
                             </Link>{' '}
-                            on this website.
+                            Якщо ми внесемо суттєві зміни в нашу Заяву про конфіденційність, ми
+                            розмістимо повідомлення на домашній сторінці нашого веб-сайту для деяких
+                            після внесення змін.
+                        </p>
+                        <h4>Відповідальність за зовнішні сайти</h4>
+                        <p>
+                            Цей веб-сайт www.greenera.info може містити посилання на інші веб-сайти.
+                            Деякі з цих веб-сайтів можуть експлуатуватися третіми сторонами. Ми
+                            надаємо посилання для вашої зручності, але ми не переглядаємо, не
+                            контролюємо та не контролюємо практики конфіденційності веб-сайтів,
+                            якими керують інші.
+                        </p>
+                        <p>
+                            Ми не несемо відповідальності за роботу веб-сайтів, що експлуатуються
+                            третіми сторонами, або за ваші ділові стосунки з ними. Тому кожного
+                            разу, коли ви залишаєте цей веб-сайт, ми рекомендуємо переглянути
+                            правила конфіденційності кожного веб-сайту та зробити свої висновки щодо
+                            відповідності цих практик.
+                        </p>
+                        <h4>Як з нами зв&#39;язатися</h4>
+                        <p>
+                            Якщо у вас є запитання чи коментарі щодо цієї Заяви про
+                            конфіденційність, будь ласка, використовуйте{' '}
+                            <Link href="/contact">
+                                <a className="hover:text-gray-900">Контактну Форму </a>
+                            </Link>{' '}
+                            на цьому веб-сайті.
                         </p>
                     </div>
                 </div>

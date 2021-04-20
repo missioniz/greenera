@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 
-import Date from '../components/date'; // comment it if you will use other option for date localization. Also, use the same way in [id].tsx
-import Layout from '../components/layout';
+import Date from '../components/Date'; // comment it if you will use other option for date localization. Also, use the same way in [id].tsx
+import Layout from '../components/Layout';
 import { getSortedPostsData } from '../lib/posts';
 export const siteTitle = 'GreenEra | Blog';
 

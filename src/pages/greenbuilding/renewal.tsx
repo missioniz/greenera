@@ -1,26 +1,17 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import useTranslation from 'next-translate/useTranslation';
 
-import Date from '../../components/Date';
 import Layout from '../../components/Layout';
-import { getAllPostIds, getPostData } from '../../lib/posts';
 
-export const Post = ({
-    postData
-}: {
-    postData: {
-        title: string;
-        date: string;
-        contentHtml: string;
-    };
-}): JSX.Element => {
-    const { locale } = useRouter();
+export const siteTitle = 'GreenEra | Політика конфіденційності';
 
+export const Renewal = (): JSX.Element => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { t } = useTranslation();
     return (
         <Layout>
             <Head>
-                <title>{postData.title}</title>
+                <title>{siteTitle}</title>
             </Head>
             <div className="relative py-16 bg-white overflow-hidden">
                 <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
@@ -104,7 +95,7 @@ export const Post = ({
                                         y="0"
                                         width="4"
                                         height="4"
-                                        className="text-primary-200"
+                                        className="text-gray-200"
                                         fill="currentColor"
                                     />
                                 </pattern>
@@ -118,14 +109,61 @@ export const Post = ({
                     </div>
                 </div>
                 <div className="relative px-4 sm:px-6 lg:px-8">
+                    <div className="text-lg max-w-prose mx-auto">
+                        <h1>
+                            <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                                Зелене відновлення міст
+                            </span>
+                        </h1>
+                    </div>
                     <div className="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
-                        <article className="py-10 prose lg:prose-xl">
-                            <h2>{postData.title}</h2>
-                            <div>
-                                <Date dateString={postData.date} locale={locale} />
-                            </div>
-                            <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-                        </article>
+                        <p>
+                            Протипандемічні заходи в різних країнах світу свідчать про загальну
+                            міжнародну тенденцію «зеленого відновлення міст». В цьому контексті
+                            найбільш ефективним інструментом трансформації урбанізованого середовища
+                            у відповідності до екобезпеки нового способу існування людей стають
+                            стандарти зеленого будівництва.
+                        </p>
+                        <p>
+                            Основні переваги зеленого будівництва для будівельної галузі можна
+                            сформулювати у наступних тезах:
+                        </p>
+                        <ul>
+                            <li>
+                                зниження сукупного негативного впливу будівельної діяльності на
+                                навколишнє середовище та здоров’я людей;
+                            </li>
+                            <li>ниження витрат на утримання будівель нового будівництва;</li>
+                            <li>
+                                використання екологічно сертифікованих матеріалів в будівництві та
+                                при оздобленні будівель;
+                            </li>
+                            <li>
+                                підвищення енергоефективності будівлі, використання альтернативних
+                                джерел енергії;
+                            </li>
+                            <li>
+                                зниження енергоспоживання, а відповідно і навантаження на
+                                електромережі та підвищення надійності їх роботи;
+                            </li>
+                            <li>
+                                розробка нових технологій і створення сучасних промислових
+                                продуктів;
+                            </li>
+                            <li>
+                                створення нових робочих місць в інтелектуальній сфері виробництва;
+                            </li>
+                            <li>
+                                комплексне скорочення витрат на будівництво та утримання будинків.
+                            </li>
+                        </ul>
+                        <p>
+                            Для ефективного впровадження зелених проектів консультуються зі
+                            спеціалістами по екологічній стійкості будівництва, починаючи зі стадій
+                            проектування та техніко-економічного обґрунтування і закінчуючи стадією
+                            моніторингу об’єктів в експлуатації на відповідність вимогам зеленого
+                            будівництва.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -133,21 +171,4 @@ export const Post = ({
     );
 };
 
-export default Post;
-
-export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
-    const paths = getAllPostIds(locales);
-    return {
-        paths,
-        fallback: false
-    };
-};
-
-export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
-    const postData = await getPostData(params.id as string, locale);
-    return {
-        props: {
-            postData
-        }
-    };
-};
+export default Renewal;
