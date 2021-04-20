@@ -90,33 +90,33 @@ export const Home = (): JSX.Element => {
                     <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                             <img
-                                className="h-12"
-                                src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                                alt="Tuple"></img>
+                                className="h-6"
+                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/BREEAM_logo.svg.png"
+                                alt="BREEAN"></img>
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                             <img
                                 className="h-12"
-                                src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                                alt="Mirage"></img>
+                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/KNUBA_Logo.jpg"
+                                alt="KNUBA"></img>
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                             <img
                                 className="h-12"
-                                src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                                alt="StaticKit"></img>
+                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/key_group.png"
+                                alt="KEYGROUP"></img>
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
                             <img
                                 className="h-12"
-                                src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                                alt="Transistor"></img>
+                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/LEEDAP_BDCcmyk.jpg"
+                                alt="LEED"></img>
                         </div>
                         <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
                             <img
                                 className="h-12"
-                                src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                                alt="Workcation"></img>
+                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/member_blk.jpg"
+                                alt="USGBC"></img>
                         </div>
                     </div>
                 </div>

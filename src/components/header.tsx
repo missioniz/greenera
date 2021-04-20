@@ -140,22 +140,22 @@ export const Header = (): JSX.Element => {
                                 <div className="grid grid-cols-2 gap-4">
                                     <a
                                         href="/about"
-                                        className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                        className="text-base font-medium text-gray-500 hover:text-gray-700">
                                         Загальна інформація
                                     </a>
                                     <a
-                                        href="/green-building"
-                                        className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                        href="/greenbuilding"
+                                        className="text-base font-medium text-gray-500 hover:text-gray-700">
                                         Зелене будівництво
                                     </a>
                                     <a
                                         href="/standards"
-                                        className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                        className="text-base font-medium text-gray-500 hover:text-gray-700">
                                         Нормативи
                                     </a>
                                     <a
                                         href="/#"
-                                        className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                        className="text-base font-medium text-gray-500 hover:text-gray-700">
                                         Інновації
                                     </a>
                                     <Link href={'/sources'}>
