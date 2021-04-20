@@ -10,7 +10,4 @@
 
 ---
 
-**Tod Do**
-
-- [X] Setup
-- [ ]Interactive maps
+Весь контент доступний за ліцензією Creative Commons Attribution 4.0 International license.
