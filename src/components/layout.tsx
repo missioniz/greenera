@@ -17,7 +17,7 @@ export const Layout = ({
             <HeadComponent />
             <Header />
             {!contact && <Banner />}
-            <main>
+            <main className="bg-white">
                 {children}
                 <Footer />
             </main>

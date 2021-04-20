@@ -17,8 +17,8 @@ export const Header = (): JSX.Element => {
                                 <span className="sr-only">Workflow</span>
                                 <img
                                     className="h-12 w-auto sm:h-16"
-                                    src="https://greenera.s3.amazonaws.com/LOGO_ai_rgb.png"
-                                    alt="logo GreenEra"
+                                    src="https://hhra.s3.amazonaws.com/greenera/LOGO_ai_rgb.png"
+                                    alt="GreenEra_logo"
                                 />
                             </a>
                         </Link>
@@ -54,12 +54,12 @@ export const Header = (): JSX.Element => {
                             Загальна інформація
                         </a>
                         <a
-                            href="/green-building"
+                            href="/greenbuilding"
                             className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Зелене будівництво
                         </a>
                         <a
-                            href="/#"
+                            href="/standards"
                             className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Нормативи
                         </a>
@@ -68,9 +68,9 @@ export const Header = (): JSX.Element => {
                             className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Інновації
                         </a>
-                        <Link href={'/blog'}>
+                        <Link href={'/sources'}>
                             <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                                Блог
+                                Джерела
                             </a>
                         </Link>
                         <Link href={'/contact'}>
@@ -107,7 +107,7 @@ export const Header = (): JSX.Element => {
                                     <div>
                                         <img
                                             className="h-12 w-auto"
-                                            src="https://greenera.s3.amazonaws.com/LOGO_ai_rgb.png"
+                                            src="https://hhra.s3.amazonaws.com/greenera/LOGO_ai_rgb.png"
                                             alt="logo GreenEra"
                                         />
                                     </div>
@@ -140,27 +140,27 @@ export const Header = (): JSX.Element => {
                                 <div className="grid grid-cols-2 gap-4">
                                     <a
                                         href="/about"
-                                        className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                        className="text-base font-medium text-gray-500 hover:text-gray-700">
                                         Загальна інформація
                                     </a>
                                     <a
-                                        href="/green-building"
-                                        className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                        href="/greenbuilding"
+                                        className="text-base font-medium text-gray-500 hover:text-gray-700">
                                         Зелене будівництво
                                     </a>
                                     <a
-                                        href="/#"
-                                        className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                        href="/standards"
+                                        className="text-base font-medium text-gray-500 hover:text-gray-700">
                                         Нормативи
                                     </a>
                                     <a
                                         href="/#"
-                                        className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                        className="text-base font-medium text-gray-500 hover:text-gray-700">
                                         Інновації
                                     </a>
-                                    <Link href={'/blog'}>
+                                    <Link href={'/sources'}>
                                         <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                                            Блог
+                                            Джерела
                                         </a>
                                     </Link>
                                     <Link href={'/contact'}>

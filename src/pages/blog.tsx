@@ -21,6 +21,7 @@ export const Blog = ({
 }): JSX.Element => {
     const { t } = useTranslation();
     const router = useRouter();
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { locale, locales, defaultLocale } = router;
 
     /* Date localization other option

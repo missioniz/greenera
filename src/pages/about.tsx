@@ -5,28 +5,22 @@ import React from 'react';
 
 import Layout from '../components/layout';
 
-export const siteTitle = 'GreenEra | Загальна інформація';
+export const siteTitle = 'GreenEra | Про нас';
 
 const people = [
     {
-        name: 'Leslie Alexander',
-        role: 'Co-Founder / CEO',
-        imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        name: 'Тетяна Кривомаз',
+        role: '',
+        imageUrl: 'https://hhra.s3.amazonaws.com/greenera/krivomaz.jpg',
         bio:
-            'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-        twitterUrl: '#',
-        linkedinUrl: '#'
+            'Ідеолог розвитку зеленого будівництва в Україні, співпрацює з Building Research Establishment, BREEAM та BRE Academy. Професор Київського національного університету будівництва і архітектури доктор технічних наук та кандидат біологічних наук. Керівник та учасник міжнародних екологічних проектів і наукових експедицій в Бельгії, Бразилії, Великій Британії, Голландії, Італії, Казахстані, Китаї, Мексиці, Німеччині, ОАЕ, Польщі, США, Туреччині, Франції, Швеції, Японії, а також на островах Корсика, Куба, Мальдіви, Мартініка, Реюньон, Сейшели. Керівник комітету в Комісії з виживання видів Міжнародного союзу охорони природи (IUCN).'
     },
     {
-        name: 'Dmytro Varavon',
-        role: 'Co-Founder / CEO',
-        imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        name: 'Дмитро Варавін',
+        role: '',
+        imageUrl: 'https://hhra.s3.amazonaws.com/greenera/varavin.jpg',
         bio:
-            'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-        twitterUrl: '#',
-        linkedinUrl: '#'
+            'Акредитований Радою зеленого будівництва США LEED-професіонал із сертифікатом проектування та будівництва будівель, інженер з охорони навколишнього середовища та менеджер проектів з міжнародними сертифікатами в галузі будівництва та дизайну зелених будівель та галузі екологічних знань з більш ніж 10-річним досвідом у сфері нерухомості, контролю за забрудненням навколишнього середовища та дизайну в галузі очищення стічних вод, опалення, вентиляції, спеціаліст з питань глобальних кліматичних змін. Експертний радник, який має високу кваліфікацію у розробці процедурних рекомендацій, спрямованих на вдосконалення контролю за промисловим забрудненням, зменшення енергоспоживання, використання води та впровадження зеленої енергії.'
     }
     // More people...
 ];
@@ -39,6 +33,7 @@ export const About = (): JSX.Element => {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
+            {/*Page title*/}
             <div className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
                 <div className="text-center">
                     <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -54,101 +49,142 @@ export const About = (): JSX.Element => {
                 </div>
             </div>
 
-            <div className="bg-white">
-                <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
-                    <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
-                        <div className="space-y-5 sm:space-y-4">
-                            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-                                About Us
-                            </h2>
-                            <p className="text-xl text-gray-500">
-                                Освітньо-інформаційна он-лайн платформа призначена для узагальнення
-                                даних щодо функціонування людей в урбанізованих середовищах в умовах
-                                обміну і поширення інформації серед широкого кола всіх зацікавлених
-                                осіб і організацій, для запобігання поширенню пандемії та збереження
-                                морально-фізичного стану здоров’я людей в урбанізованих системах,
-                                співробітництва державних та місцевих органів влади з громадськістю,
-                                бізнесом, науковими установами та міжнародними організаціями.
-                            </p>
-                            <p className="text-xl text-gray-500">
-                                Якщо ви бажаєте взяти участь в цьому проекті -{' '}
-                                <Link href="/contact">
-                                    <a>
-                                        <span className="text-primary-600 hover:text-gray-900 hover:no-underline">долучайтеся</span>
-                                    </a>
-                                </Link>{' '}
-                                до професійної екологічної спільноти!
-                            </p>
-                        </div>
-                        <div className="lg:col-span-2">
-                            <ul className="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0">
-                                {people.map((person) => (
-                                    <li key={person.name} className="sm:py-8">
-                                        <div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
-                                            <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
-                                                <img
-                                                    className="object-cover shadow-lg rounded-lg"
-                                                    src={person.imageUrl}
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div className="sm:col-span-2">
-                                                <div className="space-y-4">
-                                                    <div className="text-lg leading-6 font-medium space-y-1">
-                                                        <h3>{person.name}</h3>
-                                                        <p className="text-primary-600">
-                                                            {person.role}
-                                                        </p>
+            <div className="py-16 xl:py-36 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+                <div className="max-w-max lg:max-w-7xl mx-auto">
+                    <div className="relative">
+                        <svg
+                            className="hidden md:block absolute top-0 right-0 -mt-20 -mr-20"
+                            width={404}
+                            height={384}
+                            fill="none"
+                            viewBox="0 0 404 384"
+                            aria-hidden="true">
+                            <defs>
+                                <pattern
+                                    id="95e8f2de-6d30-4b7e-8159-f791729db21b"
+                                    x={0}
+                                    y={0}
+                                    width={20}
+                                    height={20}
+                                    patternUnits="userSpaceOnUse">
+                                    <rect
+                                        x={0}
+                                        y={0}
+                                        width={4}
+                                        height={4}
+                                        className="text-primary-200"
+                                        fill="currentColor"
+                                    />
+                                </pattern>
+                            </defs>
+                            <rect
+                                width={404}
+                                height={384}
+                                fill="url(#95e8f2de-6d30-4b7e-8159-f791729db21b)"
+                            />
+                        </svg>
+                        <svg
+                            className="hidden md:block absolute bottom-0 left-0 -mb-20 -ml-20"
+                            width={404}
+                            height={384}
+                            fill="none"
+                            viewBox="0 0 404 384"
+                            aria-hidden="true">
+                            <defs>
+                                <pattern
+                                    id="7a00fe67-0343-4a3c-8e81-c145097a3ce0"
+                                    x={0}
+                                    y={0}
+                                    width={20}
+                                    height={20}
+                                    patternUnits="userSpaceOnUse">
+                                    <rect
+                                        x={0}
+                                        y={0}
+                                        width={4}
+                                        height={4}
+                                        className="text-primary-200"
+                                        fill="currentColor"
+                                    />
+                                </pattern>
+                            </defs>
+                            <rect
+                                width={404}
+                                height={384}
+                                fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)"
+                            />
+                        </svg>
+                        <div className="relative md:bg-white md:p-6">
+                            <div className="mx-auto py-5 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-5">
+                                <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+                                    <div className="space-y-5 sm:space-y-4">
+                                        <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                                            Про нас
+                                        </h2>
+                                        <p className="text-xl text-gray-500">
+                                            Освітньо-інформаційна он-лайн платформа призначена для
+                                            узагальнення даних щодо функціонування людей в
+                                            урбанізованих середовищах в умовах обміну і поширення
+                                            інформації серед широкого кола всіх зацікавлених осіб і
+                                            організацій, для запобігання поширенню пандемії та
+                                            збереження морально-фізичного стану здоров’я людей в
+                                            урбанізованих системах, співробітництва державних та
+                                            місцевих органів влади з громадськістю, бізнесом,
+                                            науковими установами та міжнародними організаціями.
+                                        </p>
+                                        <p className="text-xl text-gray-500">
+                                            Дана платформа це місце де в процесі відкритих дискусій
+                                            і досліджень народжується істина, а її учасники вносять
+                                            свій внесок у створення безпечного місця для проживання
+                                            і &quot;зеленої&quot; трансформації середовища
+                                            проживання.
+                                        </p>
+                                        <p className="text-xl text-gray-500">
+                                            Якщо ви бажаєте взяти участь в цьому проекті -{' '}
+                                            <Link href="/contact">
+                                                <a>
+                                                    <span className="text-primary-600 hover:text-gray-900 hover:no-underline">
+                                                        долучайтеся
+                                                    </span>
+                                                </a>
+                                            </Link>{' '}
+                                            до професійної екологічної спільноти!
+                                        </p>
+                                    </div>
+                                    <div className="lg:col-span-2">
+                                        <ul className="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0">
+                                            {people.map((person) => (
+                                                <li key={person.name} className="sm:py-8">
+                                                    <div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                                                        <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
+                                                            <img
+                                                                className="object-cover shadow-lg rounded-lg"
+                                                                src={person.imageUrl}
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div className="sm:col-span-2">
+                                                            <div className="space-y-4">
+                                                                <div className="text-lg leading-6 font-medium space-y-1">
+                                                                    <h3>{person.name}</h3>
+                                                                    <p className="text-primary-600">
+                                                                        {person.role}
+                                                                    </p>
+                                                                </div>
+                                                                <div className="text-lg">
+                                                                    <p className="text-gray-500">
+                                                                        {person.bio}
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div className="text-lg">
-                                                        <p className="text-gray-500">
-                                                            {person.bio}
-                                                        </p>
-                                                    </div>
-                                                    <ul className="flex space-x-5">
-                                                        <li>
-                                                            <a
-                                                                href={person.twitterUrl}
-                                                                className="text-gray-400 hover:text-gray-500">
-                                                                <span className="sr-only">
-                                                                    Twitter
-                                                                </span>
-                                                                <svg
-                                                                    className="w-5 h-5"
-                                                                    aria-hidden="true"
-                                                                    fill="currentColor"
-                                                                    viewBox="0 0 20 20">
-                                                                    <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                                                                </svg>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a
-                                                                href={person.linkedinUrl}
-                                                                className="text-gray-400 hover:text-gray-500">
-                                                                <span className="sr-only">
-                                                                    LinkedIn
-                                                                </span>
-                                                                <svg
-                                                                    className="w-5 h-5"
-                                                                    aria-hidden="true"
-                                                                    fill="currentColor"
-                                                                    viewBox="0 0 20 20">
-                                                                    <path
-                                                                        fillRule="evenodd"
-                                                                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                                                                        clipRule="evenodd"
-                                                                    />
-                                                                </svg>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                ))}
-                            </ul>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -81,7 +81,7 @@ export const Home = (): JSX.Element => {
                 <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                     <img
                         className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-                        src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixqx=ghr3qnI88h&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+                        src="https://hhra.s3.amazonaws.com/greenera/alexandre-van-thuan-mr9FouttLGY-unsplash-2.jpg"
                         alt=""></img>
                 </div>
             </div>
@@ -90,33 +90,33 @@ export const Home = (): JSX.Element => {
                     <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                             <img
-                                className="h-12"
-                                src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                                alt="Tuple"></img>
+                                className="h-6"
+                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/BREEAM_logo.svg.png"
+                                alt="BREEAN"></img>
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                             <img
                                 className="h-12"
-                                src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                                alt="Mirage"></img>
+                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/KNUBA_Logo.jpg"
+                                alt="KNUBA"></img>
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                             <img
                                 className="h-12"
-                                src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                                alt="StaticKit"></img>
+                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/key_group.png"
+                                alt="KEYGROUP"></img>
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
                             <img
                                 className="h-12"
-                                src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                                alt="Transistor"></img>
+                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/LEEDAP_BDCcmyk.jpg"
+                                alt="LEED"></img>
                         </div>
                         <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
                             <img
                                 className="h-12"
-                                src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                                alt="Workcation"></img>
+                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/member_blk.jpg"
+                                alt="USGBC"></img>
                         </div>
                     </div>
                 </div>
@@ -126,11 +126,8 @@ export const Home = (): JSX.Element => {
                     <div className="max-w-max lg:max-w-7xl mx-auto">
                         <div className="relative z-10 mb-8 md:mb-2 md:px-6">
                             <div className="text-base max-w-prose lg:max-w-none">
-                                <h2 className="leading-6 text-primary-600 font-semibold tracking-wide uppercase">
-                                    Transactions
-                                </h2>
                                 <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                                    A better way to send money
+                                    Екобезпечна трансформація урбосередовіща
                                 </p>
                             </div>
                         </div>
@@ -155,7 +152,7 @@ export const Home = (): JSX.Element => {
                                             y="0"
                                             width="4"
                                             height="4"
-                                            className="text-gray-200"
+                                            className="text-primary-200"
                                             fill="currentColor"
                                         />
                                     </pattern>
@@ -186,7 +183,7 @@ export const Home = (): JSX.Element => {
                                             y="0"
                                             width="4"
                                             height="4"
-                                            className="text-gray-200"
+                                            className="text-primary-200"
                                             fill="currentColor"
                                         />
                                     </pattern>
@@ -201,58 +198,59 @@ export const Home = (): JSX.Element => {
                                 <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                                     <div className="prose prose-primary prose-lg text-gray-500 lg:max-w-none">
                                         <p>
-                                            Ultrices ultricies a in odio consequat egestas rutrum.
-                                            Ut vitae aliquam in ipsum. Duis nullam placerat cursus
-                                            risus ultrices nisi, vitae tellus in. Qui non fugiat aut
-                                            minus aut rerum. Perspiciatis iusto mollitia iste minima
-                                            soluta id.
+                                            У ХХІ ст. людство вже потерпало від багатьох епідемій:
                                         </p>
-                                        <p>
-                                            Erat pellentesque dictumst ligula porttitor risus eget
-                                            et eget. Ultricies tellus felis id dignissim eget. Est
-                                            augue <a href="/#">maecenas</a> risus nulla ultrices
-                                            congue nunc tortor. Eu leo risus porta integer
-                                            suspendisse sed sit ligula elit.
-                                        </p>
-                                        <ol>
+                                        <ul>
                                             <li>
-                                                Integer varius imperdiet sed interdum felis cras in
-                                                nec nunc.
+                                                2002–2004 рр. – епідемія важкого гострого
+                                                респіраторного синдрому SARS (Severe Acute
+                                                Respiratory Syndrome) викликана коронавірусом
+                                                атипічної пневмонії SARS-CoV;
                                             </li>
                                             <li>
-                                                Quam malesuada odio ut sit egestas. Elementum at
-                                                porta vitae.
+                                                2009–2010 рр. – епідемія свинячого грипу (вірус
+                                                грипу А/H1N1);
                                             </li>
-                                        </ol>
+                                            <li>
+                                                2012 р. – епідемія близькосхідного респіраторного
+                                                синдрому MERS (Middle Eastern Respiratory syndrome
+                                                coronavirus) викликана коронавірусом MERS-CoV;
+                                            </li>
+                                            <li>2014–2015 рр. – епідемія вірусу Ебола;</li>
+                                            <li>2019 р. – пандемія COVID-19.</li>
+                                        </ul>
                                         <p>
-                                            Amet, eu nulla id molestie quis tortor. Auctor erat
-                                            justo, sed pellentesque scelerisque interdum blandit
-                                            lectus. Nec viverra amet ac facilisis vestibulum.
-                                            Vestibulum purus nibh ac ultricies congue.
+                                            В ході пандемії COVID-19 розкрився потенціал
+                                            довгострокових стратегій стійкого розвитку міст для
+                                            ефективного управління ризиками. Пандемія сформувала
+                                            нову альтернативну віртуальну реальність, поширення якої
+                                            не припиниться навіть після карантину.
                                         </p>
                                     </div>
                                     <div className="mt-6 prose prose-indigo prose-lg text-gray-500 lg:mt-0">
                                         <p>
-                                            Erat pellentesque dictumst ligula porttitor risus eget
-                                            et eget. Ultricies tellus felis id dignissim eget. Est
-                                            augue maecenas risus nulla ultrices congue nunc tortor.
+                                            Найбільш висока результативність у співвідношенні
+                                            витрати / ефективність полягає у загальній підвищення
+                                            екологічної свідомості шляхом інтеграції екологічної
+                                            складової в освітній простір міста та проведення
+                                            інформаційних кампаній. Перший найголовніший етап
+                                            полягає у інформуванні широкого загалу громадськості,
+                                            боротьбі з панікою та поширенням неправдивої інформації.
                                         </p>
                                         <p>
-                                            Eu leo risus porta integer suspendisse sed sit elit.
-                                            Elit egestas lacinia sagittis pellentesque neque
-                                            dignissim vulputate sodales. Diam sed mauris felis
-                                            risus, ultricies mauris netus tincidunt. Mauris sit eu
-                                            ac tellus nibh non eget sed accumsan. Viverra ac sed
-                                            venenatis pulvinar elit. Cras diam quis tincidunt
-                                            lectus. Non mi vitae, scelerisque felis nisi, netus amet
-                                            nisl.
+                                            Важливе значення має залучення громади до прийняття
+                                            рішень і використання цифрових інструментів та
+                                            інноваційних механізмів для мобілізації приватного
+                                            сектору на етапі відновлення, зокрема це стосується
+                                            забудовників, інвесторів, фінансового сектору, а також
+                                            регуляторних органів, університетів та громадянського
+                                            суспільства.
                                         </p>
                                         <p>
-                                            Eu eu mauris bibendum scelerisque adipiscing et. Justo,
-                                            elementum consectetur morbi eros, posuere ipsum tortor.
-                                            Eget cursus massa sed velit feugiat sed ut. Faucibus
-                                            eros mauris morbi aliquam nullam. Scelerisque elementum
-                                            sit magna ullamcorper dignissim pretium.
+                                            Професіонали в галузі архітектури та містобудування,
+                                            дизайну побудованих середовищ, екобезпеки та медицини
+                                            вже зосередили увагу на пошуку нових ідей для захисту
+                                            населення.
                                         </p>
                                     </div>
                                 </div>
@@ -273,8 +271,8 @@ export const Home = (): JSX.Element => {
                                 <div className="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                                     <img
                                         className="object-cover lg:h-full lg:w-full"
-                                        src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixqx=ghr3qnI88h&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-                                        alt=""></img>
+                                        src="https://hhra.s3.amazonaws.com/greenera/engin-akyurt-8sM2SsANvKk-unsplash-2.jpg"
+                                        alt="panic"></img>
                                 </div>
                             </div>
                         </div>
@@ -290,17 +288,17 @@ export const Home = (): JSX.Element => {
                                             <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                                         </svg>
                                         <p className="mt-6 text-2xl font-medium text-white">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Sed urna nulla vitae laoreet augue. Amet feugiat est
-                                            integer dolor auctor adipiscing nunc urna, sit.
+                                            Вбиває не стільки агресивність вірусу, скільки
+                                            невідомість, помножена на паніку і страх, які вона
+                                            породжує серед населення.
                                         </p>
                                     </div>
                                     <footer className="mt-6">
                                         <p className="text-base font-medium text-white">
-                                            Judith Black
+                                            Франк Тилье
                                         </p>
                                         <p className="text-base font-medium text-indigo-100">
-                                            CEO at PureInsights
+                                            Французький письменник
                                         </p>
                                     </footer>
                                 </blockquote>
