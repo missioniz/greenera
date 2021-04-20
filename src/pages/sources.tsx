@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import useTranslation from 'next-translate/useTranslation';
 import React from 'react';
 
 import Layout from '../components/layout';
@@ -35,8 +34,6 @@ const posts = [
 ];
 
 export const Sources = (): JSX.Element => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { t } = useTranslation();
     return (
         <Layout>
             <Head>

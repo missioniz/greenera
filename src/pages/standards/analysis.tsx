@@ -1,13 +1,10 @@
 import Head from 'next/head';
-import useTranslation from 'next-translate/useTranslation';
 
 import Layout from '../../components/layout';
 
 export const siteTitle = 'GreenEra | Аналіз потенціалу застосування екологічних стандартів ';
 
-export const Analysis = (): JSX.Element => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { t } = useTranslation();
+export const StandardsAnalysis = (): JSX.Element => {
     return (
         <Layout>
             <Head>
@@ -545,4 +542,4 @@ export const Analysis = (): JSX.Element => {
     );
 };
 
-export default Analysis;
+export default StandardsAnalysis;

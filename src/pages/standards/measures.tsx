@@ -1,13 +1,10 @@
 import Head from 'next/head';
-import useTranslation from 'next-translate/useTranslation';
 
 import Layout from '../../components/layout';
 
 export const siteTitle = 'GreenEra | Короткострокові і довгострокові заходи та рекомендації';
 
-export const Measures = (): JSX.Element => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { t } = useTranslation();
+export const StandardsMeasures = (): JSX.Element => {
     return (
         <Layout>
             <Head>
@@ -197,4 +194,4 @@ export const Measures = (): JSX.Element => {
     );
 };
 
-export default Measures;
+export default StandardsMeasures;

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 const Vercel = ({ height = 18 }) => (
     <svg height={height} viewBox="0 0 283 64" fill="none">
@@ -11,52 +10,44 @@ const Vercel = ({ height = 18 }) => (
 );
 
 export const Footer = (): JSX.Element => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const router = useRouter();
     return (
         <footer className="bg-white">
             <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
                 <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
                     <div className="px-5 py-2">
-                        <a href="/about" className="text-base text-gray-500 hover:text-gray-900">
-                            Загальна інформація
-                        </a>
+                        <Link href={'/about'}>
+                            <a className="text-base text-gray-500 hover:text-gray-900">
+                                Загальна інформація
+                            </a>
+                        </Link>
                     </div>
-
                     <div className="px-5 py-2">
-                        <a
-                            href="/greenbuilding"
-                            className="text-base text-gray-500 hover:text-gray-900">
-                            Зелене будівництво
-                        </a>
+                        <Link href={'/greenbuilding'}>
+                            <a className="text-base text-gray-500 hover:text-gray-900">
+                                Зелене будівництво
+                            </a>
+                        </Link>
                     </div>
-
                     <div className="px-5 py-2">
-                        <a
-                            href="/standards"
-                            className="text-base text-gray-500 hover:text-gray-900">
-                            Нормативи
-                        </a>
+                        <Link href={'/standards'}>
+                            <a className="text-base text-gray-500 hover:text-gray-900">Нормативи</a>
+                        </Link>
                     </div>
-
                     <div className="px-5 py-2">
-                        <a href="/#" className="text-base text-gray-500 hover:text-gray-900">
-                            Інновації
-                        </a>
+                        <Link href={'/'}>
+                            <a className="text-base text-gray-500 hover:text-gray-900">Інновації</a>
+                        </Link>
                     </div>
-
                     <div className="px-5 py-2">
                         <Link href={'/sources'}>
                             <a className="text-base text-gray-500 hover:text-gray-900">Джерела</a>
                         </Link>
                     </div>
-
                     <div className="px-5 py-2">
                         <Link href={'/contact'}>
                             <a className="text-base text-gray-500 hover:text-gray-900">Контакти</a>
                         </Link>
                     </div>
-
                     <div className="px-5 py-2">
                         <Link href={'/privacy'}>
                             <a className="text-base text-gray-500 hover:text-gray-900">
@@ -82,7 +73,7 @@ export const Footer = (): JSX.Element => {
                         rel="noreferrer">
                         10.5281/zenodo.4673541
                     </a>{' '}
-                    Розробник порталу -{' '}
+                    Розробник -{' '}
                     <a
                         className="text-base text-gray-500 hover:text-gray-900"
                         href={'https://www.missioniz.com'}
@@ -102,13 +93,24 @@ export const Footer = (): JSX.Element => {
                             Creative Commons Attribution 4.0 International license
                         </a>
                     </Link>
-                    , якщо не зазначено інше.
+                    , якщо не зазначено інше. Усі торгові марки та логотипи є власністю відповідних
+                    власників і використовуються на цьому веб-сайті лише для ідентифікації. Проект
+                    реалізується за допомогою{' '}
+                    <Link href={'http://www.knuba.edu.ua'}>
+                        <a className={'text-gray-500'} target={'_blank'} rel={'noreferrer'}>
+                            Київського Національного Університету Будівництва та Архітектури
+                        </a>
+                    </Link>
                 </p>
                 <div className="text-gray-700 text-sm grid justify-items-end mt-2">
-                    <span className="mr-1">Powered by</span>
-                    <span>
-                        <Vercel />
-                    </span>
+                    <Link href={'https://vercel.com'}>
+                        <a className={'text-gray-500'} target={'_blank'} rel={'noreferrer'}>
+                            <span className="mr-1">Powered by</span>
+                            <span>
+                                <Vercel />
+                            </span>
+                        </a>
+                    </Link>
                 </div>
             </div>
         </footer>

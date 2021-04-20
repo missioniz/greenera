@@ -1,18 +1,22 @@
 import { Transition } from '@headlessui/react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+{
+    /*import { useRouter } from 'next/router';*/
+}
 import { useState } from 'react';
 
 export const Header = (): JSX.Element => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const router = useRouter();
+    {
+        /*const router = useRouter();*/
+    }
     const [isOpen, setIsOpen] = useState(false);
     return (
         <header>
             <div className="relative bg-white">
                 <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
-                        <Link href={'/#'}>
+                        <Link href={'/'}>
                             <a>
                                 <span className="sr-only">Workflow</span>
                                 <img
@@ -48,26 +52,26 @@ export const Header = (): JSX.Element => {
                         </button>
                     </div>
                     <nav className="hidden md:flex space-x-10">
-                        <a
-                            href="/about"
-                            className="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Загальна інформація
-                        </a>
-                        <a
-                            href="/greenbuilding"
-                            className="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Зелене будівництво
-                        </a>
-                        <a
-                            href="/standards"
-                            className="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Нормативи
-                        </a>
-                        <a
-                            href="/#"
-                            className="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Інновації
-                        </a>
+                        <Link href={'/about'}>
+                            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                                Загальна інформація
+                            </a>
+                        </Link>
+                        <Link href={'/greenbuilding'}>
+                            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                                Зелене будівництво
+                            </a>
+                        </Link>
+                        <Link href={'/standards'}>
+                            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                                Нормативи
+                            </a>
+                        </Link>
+                        <Link href={'/'}>
+                            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                                Інновації
+                            </a>
+                        </Link>
                         <Link href={'/sources'}>
                             <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                                 Джерела
@@ -138,26 +142,26 @@ export const Header = (): JSX.Element => {
                             </div>
                             <div className="py-6 px-5">
                                 <div className="grid grid-cols-2 gap-4">
-                                    <a
-                                        href="/about"
-                                        className="text-base font-medium text-gray-500 hover:text-gray-700">
-                                        Загальна інформація
-                                    </a>
-                                    <a
-                                        href="/greenbuilding"
-                                        className="text-base font-medium text-gray-500 hover:text-gray-700">
-                                        Зелене будівництво
-                                    </a>
-                                    <a
-                                        href="/standards"
-                                        className="text-base font-medium text-gray-500 hover:text-gray-700">
-                                        Нормативи
-                                    </a>
-                                    <a
-                                        href="/#"
-                                        className="text-base font-medium text-gray-500 hover:text-gray-700">
-                                        Інновації
-                                    </a>
+                                    <Link href={'/about'}>
+                                        <a className="text-base font-medium text-gray-500 hover:text-gray-700">
+                                            Загальна інформація
+                                        </a>
+                                    </Link>
+                                    <Link href={'/greenbuilding'}>
+                                        <a className="text-base font-medium text-gray-500 hover:text-gray-700">
+                                            Зелене будівництво
+                                        </a>
+                                    </Link>
+                                    <Link href={'/standards'}>
+                                        <a className="text-base font-medium text-gray-500 hover:text-gray-700">
+                                            Нормативи
+                                        </a>
+                                    </Link>
+                                    <Link href={'/'}>
+                                        <a className="text-base font-medium text-gray-500 hover:text-gray-700">
+                                            Інновації
+                                        </a>
+                                    </Link>
                                     <Link href={'/sources'}>
                                         <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                                             Джерела
