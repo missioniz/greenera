@@ -3,7 +3,7 @@ import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import React from 'react';
 
-import Layout from '../../components/Layout';
+import Layout from '../../components/layout';
 
 export const siteTitle = 'GreenEra | Стандарти зеленого будівництва';
 

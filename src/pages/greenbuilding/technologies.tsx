@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
 
-import Layout from '../../components/Layout';
+import Layout from '../../components/layout';
 
-export const siteTitle = 'GreenEra | Політика конфіденційності';
+export const siteTitle = 'GreenEra | Технології управління будівлями';
 
 export const Technologies = (): JSX.Element => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars

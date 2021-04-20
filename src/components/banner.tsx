@@ -1,5 +1,4 @@
 import { Transition } from '@headlessui/react';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 
@@ -26,7 +25,7 @@ export const Banner = (): JSX.Element => {
                                 Портал працює в тестовому режимі. Якщо ви маєте зауваження або
                                 пропозиції, будь ласка,
                             </span>
-                            <span className="hidden block sm:ml-2 sm:inline-block">
+                            <span className="block sm:ml-2 sm:inline-block">
                                 <a href="/contact" className="text-white font-bold underline">
                                     {' '}
                                     напишіть нам <span aria-hidden="true">&rarr;</span>

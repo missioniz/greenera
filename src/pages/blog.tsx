@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 
 import Date from '../components/date'; // comment it if you will use other option for date localization. Also, use the same way in [id].tsx
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 export const siteTitle = 'GreenEra | Blog';
 
@@ -21,6 +21,7 @@ export const Blog = ({
 }): JSX.Element => {
     const { t } = useTranslation();
     const router = useRouter();
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { locale, locales, defaultLocale } = router;
 
     /* Date localization other option

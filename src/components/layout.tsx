@@ -1,6 +1,6 @@
 import CookieConsent from 'react-cookie-consent';
 
-import Banner from './Banner
+import Banner from './banner';
 import Footer from './footer';
 import HeadComponent from './head';
 import Header from './header';

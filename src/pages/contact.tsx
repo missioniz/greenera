@@ -2,7 +2,7 @@ import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
 import React, { useState } from 'react';
 
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 export const siteTitle = 'GreenEra | Контакти';
 
 export const Contact = (): JSX.Element => {

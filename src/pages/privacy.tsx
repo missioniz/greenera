@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 
 export const siteTitle = 'GreenEra | Політика конфіденційності';
 
