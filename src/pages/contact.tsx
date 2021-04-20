@@ -1,14 +1,10 @@
 import Head from 'next/head';
-import useTranslation from 'next-translate/useTranslation';
 import React, { useState } from 'react';
 
 import Layout from '../components/layout';
 export const siteTitle = 'GreenEra | Контакти';
 
 export const Contact = (): JSX.Element => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { t } = useTranslation();
-
     const [status, setStatus] = useState({
         submitted: false,
         submitting: false,
@@ -25,6 +21,9 @@ export const Contact = (): JSX.Element => {
     });
 
     const handleResponse = (status, msg) => {
+        {
+            /*FIXME: Warning:(23, 29) 'status' is already declared in the upper scope.*/
+        }
         if (status === 200) {
             setStatus({
                 submitted: true,
@@ -86,7 +85,8 @@ export const Contact = (): JSX.Element => {
                         <img
                             className="h-56 w-full object-cover lg:absolute lg:h-full"
                             src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixqx=ghr3qnI88h&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
-                            alt=""></img>
+                            alt=""
+                        />
                     </div>
                 </div>
                 <div className="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
@@ -118,7 +118,8 @@ export const Contact = (): JSX.Element => {
                                             name="firstName"
                                             id="firstName"
                                             autoComplete="given-name"
-                                            className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"></input>
+                                            className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"
+                                        />
                                     </div>
                                 </div>
                                 <div>
@@ -136,7 +137,8 @@ export const Contact = (): JSX.Element => {
                                             name="lastName"
                                             id="lastName"
                                             autoComplete="family-name"
-                                            className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"></input>
+                                            className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"
+                                        />
                                     </div>
                                 </div>
                                 <div className="sm:col-span-2">
@@ -154,7 +156,8 @@ export const Contact = (): JSX.Element => {
                                             name="email"
                                             type="email"
                                             autoComplete="email"
-                                            className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"></input>
+                                            className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"
+                                        />
                                     </div>
                                 </div>
                                 <div className="sm:col-span-2">
@@ -178,7 +181,8 @@ export const Contact = (): JSX.Element => {
                                             name="companyName"
                                             id="companyName"
                                             autoComplete="organization"
-                                            className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"></input>
+                                            className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"
+                                        />
                                     </div>
                                 </div>
                                 <div className="sm:col-span-2">
@@ -203,7 +207,8 @@ export const Contact = (): JSX.Element => {
                                             id="phone"
                                             autoComplete="tel"
                                             aria-describedby="phone_description"
-                                            className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"></input>
+                                            className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"
+                                        />
                                     </div>
                                 </div>
                                 <div className="sm:col-span-2">
@@ -228,7 +233,8 @@ export const Contact = (): JSX.Element => {
                                             name="message"
                                             aria-describedby="how_can_we_help_description"
                                             rows={4}
-                                            className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"></textarea>
+                                            className="block w-full shadow-sm sm:text-sm focus:ring-primary-600 focus:border-primary-600 border-gray-300 rounded-md"
+                                        />
                                     </div>
                                 </div>
                                 <div className="text-right sm:col-span-2">

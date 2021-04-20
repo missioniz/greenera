@@ -1,14 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import useTranslation from 'next-translate/useTranslation';
 
 import Layout from '../components/layout';
 
 export const siteTitle = 'GreenEra | Політика конфіденційності';
 
 export const Privacy = (): JSX.Element => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { t } = useTranslation();
     return (
         <Layout>
             <Head>
@@ -225,7 +222,7 @@ export const Privacy = (): JSX.Element => {
                         <p>
                             Якщо у вас є запитання чи коментарі щодо цієї Заяви про
                             конфіденційність, будь ласка, використовуйте{' '}
-                            <Link href="/contact">
+                            <Link href={'/contact'}>
                                 <a className="hover:text-gray-900">Контактну Форму </a>
                             </Link>{' '}
                             на цьому веб-сайті.

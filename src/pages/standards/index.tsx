@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import useTranslation from 'next-translate/useTranslation';
 import React from 'react';
 
 import Layout from '../../components/layout';
@@ -34,9 +33,7 @@ const posts = [
     }
 ];
 
-export const GreenBuilding = (): JSX.Element => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { t } = useTranslation();
+export const Standards = (): JSX.Element => {
     return (
         <Layout>
             <Head>
@@ -186,7 +183,7 @@ export const GreenBuilding = (): JSX.Element => {
                                             ідеально корелює з основними принципами зеленого
                                             будівництва.
                                         </p>
-                                        <Link href="/standards/green">
+                                        <Link href={'/standards/green'}>
                                             <a>
                                                 <span className="hover:text-gray-900">
                                                     Читати повністю
@@ -233,4 +230,4 @@ export const GreenBuilding = (): JSX.Element => {
         </Layout>
     );
 };
-export default GreenBuilding;
+export default Standards;

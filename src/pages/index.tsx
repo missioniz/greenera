@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import useTranslation from 'next-translate/useTranslation';
 import { useRef, useState } from 'react';
 
 import Layout from '../components/layout';
@@ -7,9 +6,6 @@ import Layout from '../components/layout';
 export const siteTitle = 'GreenEra';
 
 export const Home = (): JSX.Element => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { t } = useTranslation();
-
     // 1. Create a reference to the input so we can fetch/clear it's value.
     const inputEl = useRef(null);
     // 2. Hold a message in state to handle the response from our API.
@@ -82,7 +78,8 @@ export const Home = (): JSX.Element => {
                     <img
                         className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
                         src="https://hhra.s3.amazonaws.com/greenera/alexandre-van-thuan-mr9FouttLGY-unsplash-2.jpg"
-                        alt=""></img>
+                        alt=""
+                    />
                 </div>
             </div>
             <div className="bg-white">
@@ -92,31 +89,36 @@ export const Home = (): JSX.Element => {
                             <img
                                 className="h-6"
                                 src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/BREEAM_logo.svg.png"
-                                alt="BREEAN"></img>
+                                alt="BREEAN"
+                            />
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                             <img
                                 className="h-12"
                                 src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/KNUBA_Logo.jpg"
-                                alt="KNUBA"></img>
+                                alt="KNUBA"
+                            />
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                             <img
                                 className="h-12"
                                 src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/key_group.png"
-                                alt="KEYGROUP"></img>
+                                alt="KEYGROUP"
+                            />
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
                             <img
                                 className="h-12"
                                 src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/LEEDAP_BDCcmyk.jpg"
-                                alt="LEED"></img>
+                                alt="LEED"
+                            />
                         </div>
                         <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
                             <img
                                 className="h-12"
                                 src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/member_blk.jpg"
-                                alt="USGBC"></img>
+                                alt="USGBC"
+                            />
                         </div>
                     </div>
                 </div>
@@ -272,7 +274,8 @@ export const Home = (): JSX.Element => {
                                     <img
                                         className="object-cover lg:h-full lg:w-full"
                                         src="https://hhra.s3.amazonaws.com/greenera/engin-akyurt-8sM2SsANvKk-unsplash-2.jpg"
-                                        alt="panic"></img>
+                                        alt="panic"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -332,7 +335,8 @@ export const Home = (): JSX.Element => {
                                 required
                                 ref={inputEl}
                                 className="w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-primary-500 focus:border-primary-500 sm:max-w-xs rounded-md"
-                                placeholder="Електронна адреса"></input>
+                                placeholder="Електронна адреса"
+                            />
                             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                                 <button
                                     type="submit"
@@ -349,7 +353,7 @@ export const Home = (): JSX.Element => {
                         <p className="mt-3 text-sm text-gray-500">
                             Ми дбаємо про захист ваших даних. Прочитайте нашу{' '}
                             <a
-                                href="/privacy"
+                                href={'/privacy'}
                                 className="text-sm text-gray-500 hover:text-gray-900 underline">
                                 Політику конфіденційності.
                             </a>

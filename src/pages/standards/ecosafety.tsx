@@ -1,13 +1,10 @@
 import Head from 'next/head';
-import useTranslation from 'next-translate/useTranslation';
 
 import Layout from '../../components/layout';
 
 export const siteTitle = 'GreenEra | Екобезпека';
 
-export const GreenStandards = (): JSX.Element => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { t } = useTranslation();
+export const StandardsEcosafety = (): JSX.Element => {
     return (
         <Layout>
             <Head>
@@ -523,4 +520,4 @@ export const GreenStandards = (): JSX.Element => {
     );
 };
 
-export default GreenStandards;
+export default StandardsEcosafety;
