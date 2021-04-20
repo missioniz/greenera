@@ -1,9 +1,9 @@
 import CookieConsent from 'react-cookie-consent';
 
-import Banner from './Banner';
-import Footer from './Footer';
-import HeadComponent from './Head';
-import Header from './Header';
+import Banner from './Banner
+import Footer from './footer';
+import HeadComponent from './head';
+import Header from './header';
 
 export const Layout = ({
     children,
