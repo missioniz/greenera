@@ -10,10 +10,7 @@ export const HeadComponent = (): JSX.Element => {
     return (
         <Head>
             <title>{siteTitle}</title>
-            <meta
-                name="description"
-                content="Learn how to build a personal website using Next.js"
-            />
+            <meta name="description" content="Освітньо-інформаційна платформа GreenEra" />
             <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
             {/*favocin*/}

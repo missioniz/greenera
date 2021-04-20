@@ -17,8 +17,8 @@ export const Header = (): JSX.Element => {
                                 <span className="sr-only">Workflow</span>
                                 <img
                                     className="h-12 w-auto sm:h-16"
-                                    src="https://greenera.s3.amazonaws.com/LOGO_ai_rgb.png"
-                                    alt="logo GreenEra"
+                                    src="https://hhra.s3.amazonaws.com/greenera/LOGO_ai_rgb.png"
+                                    alt="GreenEra_logo"
                                 />
                             </a>
                         </Link>
