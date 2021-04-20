@@ -98,7 +98,7 @@ export const Footer = (): JSX.Element => {
                     реалізується за допомогою{' '}
                     <Link href={'http://www.knuba.edu.ua'}>
                         <a className={'text-gray-500'} target={'_blank'} rel={'noreferrer'}>
-                            Київського Національного Університету Будівництва та
+                            Київського Національного Університету Будівництва та Архітектури
                         </a>
                     </Link>
                 </p>
