@@ -12,4 +12,5 @@
 
 **Tod Do**
 
-- [ ] Setup
+- [X] Setup
+- [ ]Interactive maps
