@@ -105,7 +105,7 @@ export const Footer = (): JSX.Element => {
                     </Link>
                 </p>
                 <div className="text-gray-700 text-sm grid justify-items-end mt-2">
-                    <Link href={'https://vercel.com'}>
+                    <Link href={'https://vercel.com?utm_source=powered-by-vercel'}>
                         <a className={'text-gray-500'} target={'_blank'} rel={'noreferrer'}>
                             <span className="mr-1">Powered by</span>
                             <span>
