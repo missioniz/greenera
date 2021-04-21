@@ -34,8 +34,10 @@ export const Footer = (): JSX.Element => {
                         </Link>
                     </div>
                     <div className="px-5 py-2">
-                        <Link href={'/'}>
-                            <a className="text-base text-gray-500 hover:text-gray-900">Інновації</a>
+                        <Link href={'/maps'}>
+                            <a className="text-base text-gray-500 hover:text-gray-900">
+                                Інтерактивні карти
+                            </a>
                         </Link>
                     </div>
                     <div className="px-5 py-2">
