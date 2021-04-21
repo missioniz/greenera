@@ -207,7 +207,7 @@ export const GreenBuilding = (): JSX.Element => {
                         <div className="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
                             {posts.map((post) => (
                                 <div key={post.title}>
-                                    <a href="/#" className="mt-2 block">
+                                    <a href={post.href} className="mt-2 block">
                                         <p className="text-xl font-semibold text-gray-900">
                                             {post.title}
                                         </p>
