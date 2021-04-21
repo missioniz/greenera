@@ -6,7 +6,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/rsipakov/nextjs-typescript-tailwind-next-translate)
 [![DOI](https://zenodo.org/badge/356074381.svg)](https://zenodo.org/badge/latestdoi/356074381)
 
-[![Powered by Vercel](https://raw.githubusercontent.com/abumalick/powered-by-vercel/master/powered-by-vercel.svg)](https://vercel.com?utm_source=powered-by-vercel)
+[![Powered by Vercel](https://missioniz.s3.amazonaws.com/logo-vendors/powered-by-vercel.svg)](https://vercel.com?utm_source=powered-by-vercel)
 
 ---
 
