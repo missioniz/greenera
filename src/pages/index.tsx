@@ -101,16 +101,16 @@ export const Home = (): JSX.Element => {
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                             <img
-                                className="h-12"
-                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/key_group.png"
-                                alt="KEYGROUP"
+                                className="h-10"
+                                src="https://hhra.s3.amazonaws.com/HHRA-logo-color.png"
+                                alt="HHRA"
                             />
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
                             <img
-                                className="h-12"
-                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/LEEDAP_BDCcmyk.jpg"
-                                alt="LEED"
+                                className="h-11"
+                                src="https://uaecs.s3.amazonaws.com/useful_logo_w_sm.png"
+                                alt="UAECS"
                             />
                         </div>
                         <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
