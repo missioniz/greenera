@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useRef, useState } from 'react';
 
 import Layout from '../components/layout';
@@ -67,8 +68,8 @@ export const Home = (): JSX.Element => {
                                     </span>
                                 </h1>
                                 <p className="mt-3 text-lg text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                                    просуває інноваційні політичні рішення, які спрямовують нас на
-                                    більш чистий, безпечний та стійкий енергетичний шлях.
+                                    просуває інноваційні рішення, які спрямовують нас на більш
+                                    чистий, безпечний та стійкий енергетичний шлях.
                                 </p>
                             </div>
                         </div>
@@ -93,18 +94,26 @@ export const Home = (): JSX.Element => {
                             />
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                            <img
-                                className="h-12"
-                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/KNUBA_Logo.jpg"
-                                alt="KNUBA"
-                            />
+                            <Link href="http://www.knuba.edu.ua/">
+                                <a target="_blank" rel="noreferrer">
+                                    <img
+                                        className="h-12"
+                                        src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/KNUBA_Logo.jpg"
+                                        alt="KNUBA"
+                                    />
+                                </a>
+                            </Link>
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                            <img
-                                className="h-10"
-                                src="https://hhra.s3.amazonaws.com/HHRA-logo-color.png"
-                                alt="HHRA"
-                            />
+                            <Link href="https://hhra-missioniz.hub.arcgis.com/">
+                                <a target="_blank" rel="noreferrer">
+                                    <img
+                                        className="h-10"
+                                        src="https://hhra.s3.amazonaws.com/HHRA-logo-color.png"
+                                        alt="HHRA"
+                                    />
+                                </a>
+                            </Link>
                         </div>
                         <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
                             <img
@@ -114,11 +123,15 @@ export const Home = (): JSX.Element => {
                             />
                         </div>
                         <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-                            <img
-                                className="h-12"
-                                src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/member_blk.jpg"
-                                alt="USGBC"
-                            />
+                            <Link href="https://www.usgbc.org/">
+                                <a target="_blank" rel="noreferrer">
+                                    <img
+                                        className="h-12"
+                                        src="https://hhra.s3.amazonaws.com/greenera/logo_vendor/member_blk.jpg"
+                                        alt="USGBC"
+                                    />
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
