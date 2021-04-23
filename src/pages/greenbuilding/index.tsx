@@ -35,8 +35,7 @@ export const GreenBuilding = (): JSX.Element => {
                         <span className="block xl:inline">будівництва</span>{' '}
                     </h1>
                     <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                        является актуальной для всех секторов городского развития и допомагає у
-                        збереженні навколишнього середовища та екосистеми.
+                        для всіх секторів міського розвитку та всіх типів побудованого середовища.
                     </p>
                 </div>
             </div>

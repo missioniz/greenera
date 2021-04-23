@@ -48,8 +48,8 @@ export const Standards = (): JSX.Element => {
                         <span className="block xl:inline">будівництва</span>{' '}
                     </h1>
                     <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                        є найбільш ефективним інструментом трансформації урбанізованого середовища у
-                        відповідності до екобезпеки нового способу існування людей.
+                        ефективний інструмент трансформації урбанізованого середовища в умовах
+                        пандемічних загроз.
                     </p>
                 </div>
             </div>
