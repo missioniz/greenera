@@ -13,6 +13,7 @@ export const HeadComponent = (): JSX.Element => {
             <meta name="og:title" content={siteTitle} />
             <meta property="og:url" content={'https://www.greenera.info/'} />
             <meta property="og:type" content="website" />
+            <meta property="og:site_name" content={siteTitle} />
             <meta
                 property="og:description"
                 content="Освітньо-інформаційна платформа GreenEra - просуває інноваційні рішення, які спрямовують нас на більш чистий, безпечний та стійкий енергетичний шлях."
@@ -22,8 +23,9 @@ export const HeadComponent = (): JSX.Element => {
                 content={'https://hhra.s3.amazonaws.com/greenera/Screen-Shot-GreenEra.png'}
             />
             {/*Twitter*/}
-            <meta name="twitter:card" content="summary" />
-            <meta name="twitter:site" content={'https://www.greenera.info'} />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="@RossSipakov" />
+            <meta name="twitter:creator" content="@RossSipakov" />
             <meta name="twitter:title" content={siteTitle} />
             <meta
                 name="twitter:description"
