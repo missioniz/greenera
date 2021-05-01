@@ -11,7 +11,7 @@ export const HeadComponent = (): JSX.Element => {
         <Head>
             <title>{siteTitle}</title>
             <meta name="og:title" content={siteTitle} />
-            <meta property="og:url" content={'https://www.greenera.info/'} />
+            <meta property="og:url" content="https://www.greenera.info/" />
             <meta property="og:type" content="website" />
             <meta property="og:site_name" content={siteTitle} />
             <meta
@@ -20,12 +20,12 @@ export const HeadComponent = (): JSX.Element => {
             />
             <meta
                 property="og:image"
-                content={'https://hhra.s3.amazonaws.com/greenera/Screen-Shot-GreenEra.png'}
+                content="https://hhra.s3.amazonaws.com/greenera/Screen-Shot-GreenEra.png"
             />
             {/*Twitter*/}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:site" content="@RossSipakov" />
-            <meta name="twitter:creator" content="@RossSipakov" />
+            <meta name="twitter:site" content="@missioniz_inc" />
+            <meta name="twitter:creator" content="@missioniz_inc" />
             <meta name="twitter:title" content={siteTitle} />
             <meta
                 name="twitter:description"
@@ -33,8 +33,12 @@ export const HeadComponent = (): JSX.Element => {
             />
             <meta
                 name="twitter:image"
-                content={'https://hhra.s3.amazonaws.com/greenera/Screen-Shot-GreenEra.png'}
+                content="https://hhra.s3.amazonaws.com/greenera/Screen-Shot-GreenEra.png"
             />
+            <meta name="twitter:image:width" content="770px" />
+            <meta name="twitter:image:height" content="420px" />
+            <meta name="twitter:image:height" content="420px">
+            <meta name="twitter:image:alt" content="Освітньо-інформаційна платформа GreenEra - просуває інноваційні рішення, які спрямовують нас на більш чистий, безпечний та стійкий енергетичний шлях.">
             {/*favocin*/}
             <link
                 rel="apple-touch-icon"
