@@ -13,6 +13,14 @@ export const HeadComponent = (): JSX.Element => {
             <meta name="description" content="Освітньо-інформаційна платформа GreenEra" />
             <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
+            <meta property="og:url" content="www.greenera.info" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Освітньо-інформаційна платформа GreenEra" />
+            <meta property="og:description" content="Освітньо-інформаційна платформа GreenEra" />
+            <meta
+                property="og:image"
+                content={'https://hhra.s3.amazonaws.com/greenera/Screen-Shot-GreenEra.png'}
+            />
             {/*favocin*/}
             <link
                 rel="apple-touch-icon"
