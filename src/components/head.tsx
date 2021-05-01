@@ -32,7 +32,7 @@ export const HeadComponent = (): JSX.Element => {
                 content="Освітньо-інформаційна платформа GreenEra - просуває інноваційні рішення, які спрямовують нас на більш чистий, безпечний та стійкий енергетичний шлях."
             />
             <meta
-                name="twitter:image"
+                name="twitter:image:src"
                 content="https://hhra.s3.amazonaws.com/greenera/Screen-Shot-GreenEra.png"
             />
             <meta name="twitter:image:width" content="770px" />
