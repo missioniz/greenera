@@ -12,7 +12,7 @@ export const HeadComponent = (): JSX.Element => {
             <title>{siteTitle}</title>
             <meta name="description" content="Освітньо-інформаційна платформа GreenEra" />
             <meta name="og:title" content={siteTitle} />
-            <meta property="og:url" content="https://www.greenera.info" />
+            <meta property="og:url" content="https://www.greenera.info/" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Освітньо-інформаційна платформа GreenEra" />
             <meta
@@ -24,7 +24,7 @@ export const HeadComponent = (): JSX.Element => {
                 content={'https://hhra.s3.amazonaws.com/greenera/Screen-Shot-GreenEra.png'}
             />
             {/*Twitter*/}
-            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:card" content="summary" />
             <meta name="twitter:site" content="https://www.greenera.info" />
             <meta name="twitter:title" content="Освітньо-інформаційна платформа GreenEra" />
             <meta
