@@ -37,8 +37,11 @@ export const HeadComponent = (): JSX.Element => {
             />
             <meta name="twitter:image:width" content="770px" />
             <meta name="twitter:image:height" content="420px" />
-            <meta name="twitter:image:height" content="420px">
-            <meta name="twitter:image:alt" content="Освітньо-інформаційна платформа GreenEra - просуває інноваційні рішення, які спрямовують нас на більш чистий, безпечний та стійкий енергетичний шлях.">
+            <meta name="twitter:image:height" content="420px" />
+            <meta
+                name="twitter:image:alt"
+                content="Освітньо-інформаційна платформа GreenEra - просуває інноваційні рішення, які спрямовують нас на більш чистий, безпечний та стійкий енергетичний шлях."
+            />
             {/*favocin*/}
             <link
                 rel="apple-touch-icon"
