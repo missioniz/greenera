@@ -13,13 +13,25 @@ export const HeadComponent = (): JSX.Element => {
             <meta name="description" content="Освітньо-інформаційна платформа GreenEra" />
             <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta property="og:url" content="www.greenera.info" />
+            <meta property="og:url" content="https://www.greenera.info" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Освітньо-інформаційна платформа GreenEra" />
             <meta property="og:description" content="Освітньо-інформаційна платформа GreenEra" />
             <meta
                 property="og:image"
                 content={'https://hhra.s3.amazonaws.com/greenera/Screen-Shot-GreenEra.png'}
+            />
+            {/*Twitter*/}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="https://www.greenera.info" />
+            <meta name="twitter:title" content="Освітньо-інформаційна платформа GreenEra" />
+            <meta
+                name="twitter:description"
+                content="GreenEra - просуває інноваційні рішення, які спрямовують нас на більш чистий, безпечний та стійкий енергетичний шлях."
+            />
+            <meta
+                name="twitter:image"
+                content="https://hhra.s3.amazonaws.com/greenera/Screen-Shot-GreenEra.png"
             />
             {/*favocin*/}
             <link
